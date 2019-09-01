@@ -27,7 +27,7 @@ public class LoginUserEndToEndTest {
         currentTimeStamp = Utility.getCurrrentTimeStamp();
         createDataForLoginUser();
     }
-    
+
     @Test
     public void findAllLoginUsersTest() {
         List<LoginUser> loginUsers = loginUserRepository.findAllLoginUsers();
