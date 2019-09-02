@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9ae5cda-65da-459f-9cc6-1b499db4d0fd" name="Default Changelist" comment="" />
+    <list default="true" id="b9ae5cda-65da-459f-9cc6-1b499db4d0fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/sql/create_address.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Entity/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/AddressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/AddressRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/AddressRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/AddressStatements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/svms/AddressEndToEndTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log.out" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/create_loginuser.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/create_loginuser.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/LoginUserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/LoginUserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/svms/LoginUserEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/LoginUserEndToEndTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testApplicationContext.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +31,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -26,7 +42,7 @@
   <component name="ProjectId" id="1QBgmNAoyrJNZlliEEQcHcWTs0g" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.inlinked.gradle.project.popup" value="true" />
   </component>
@@ -48,7 +64,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.LoginUserEndToEndTest.test">
+  <component name="RunManager" selected="JUnit.AddressEndToEndTest.findAddressByIdTest">
     <configuration name="LoginUserServiceMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="svms.LoginUserServiceMain" />
       <module name="svms.main" />
@@ -82,8 +98,25 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="AddressEndToEndTest.findAddressByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="svms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="svms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="svms" />
+      <option name="MAIN_CLASS_NAME" value="svms.AddressEndToEndTest" />
+      <option name="METHOD_NAME" value="findAddressByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AddressEndToEndTest.findAddressByIdTest" />
         <item itemvalue="Gradle.LoginUserEndToEndTest.test" />
         <item itemvalue="Application.LoginUserServiceMain" />
       </list>
@@ -107,7 +140,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -118,7 +153,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/svms/LoginUserEndToEndTest.java</url>
-          <line>98</line>
+          <line>118</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
