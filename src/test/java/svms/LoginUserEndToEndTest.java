@@ -29,7 +29,7 @@ public class LoginUserEndToEndTest {
         logger.info(Utility.getCurrrentTimeStamp()+": "+ LoginUserEndToEndTest.class.getName()+": ");
         logger.info("dataSetup(): ");
     }
-    
+
     @Test
     public void findAllLoginUsersTest() {
         List<LoginUser> loginUsers = loginUserRepository.findAllLoginUsers();
