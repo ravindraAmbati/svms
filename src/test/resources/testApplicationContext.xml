@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns = "http://www.springframework.org/schema/beans"
-       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -20,6 +20,21 @@
     </bean>
 
     <bean id="loginUserRepo" class="svms.Repository.LoginUserRepositoryImpl">
+        <property name="jdbcTemplate" ref="jt"/>
+        <property name="namedParameterJdbcTemplate" ref="njt"/>
+    </bean>
+
+    <bean id="addressRepo" class="svms.Repository.AddressRepositoryImpl">
+        <property name="jdbcTemplate" ref="jt"/>
+        <property name="namedParameterJdbcTemplate" ref="njt"/>
+    </bean>
+
+    <bean id="personRepo" class="svms.Repository.PersonRepositoryImpl">
+        <property name="jdbcTemplate" ref="jt"/>
+        <property name="namedParameterJdbcTemplate" ref="njt"/>
+    </bean>
+
+    <bean id="employeeRepo" class="svms.Repository.EmployeeRepositoryImpl">
         <property name="jdbcTemplate" ref="jt"/>
         <property name="namedParameterJdbcTemplate" ref="njt"/>
     </bean>
