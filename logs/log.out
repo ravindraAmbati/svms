@@ -278,3 +278,479 @@ cleanupDataForAddress(): data after cleanup: []
 ### ended cleanupDataForAddress() ###
 2019-09-02 19:45:39.942: svms.AddressEndToEndTest: 
 tearDown()
+2019-09-03 21:26:29.344: svms.PersonEndToEndTest: 
+### started createDataForPerson() ###
+2019-09-03 21:26:29.36: svms.Repository.PersonRepositoryImpl: 
+cleanUp(): query: DELETE FROM person
+2019-09-03 21:26:32.219: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:26:29.344', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:26:32.516: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:26:29.344', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:26:32.625: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:26:29.344', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:26:33.093: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:26:29.344', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:26:33.156: svms.Repository.PersonRepositoryImpl: 
+findAllPersons(): query: SELECT * FROM person
+2019-09-03 21:26:33.781: svms.PersonEndToEndTest: 
+### started cleanupDataForPerson() ###
+2019-09-03 21:26:33.781: svms.Repository.PersonRepositoryImpl: 
+findAllPersons(): query: SELECT * FROM person
+2019-09-03 21:30:35.502: svms.PersonEndToEndTest: 
+### started createDataForPerson() ###
+2019-09-03 21:30:35.502: svms.Repository.PersonRepositoryImpl: 
+cleanUp(): query: DELETE FROM person
+2019-09-03 21:30:35.981: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:30:36.104: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:30:36.119: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:30:36.135: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:30:36.166: svms.Repository.PersonRepositoryImpl: 
+findAllPersons(): query: SELECT * FROM person
+createDataForPerson(): data[Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}]
+### ended createDataForPerson() ###
+2019-09-03 21:30:36.219: svms.PersonEndToEndTest: 
+dataSetup(): 
+2019-09-03 21:30:36.219: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999994, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:30:36.235: svms.PersonEndToEndTest: 
+2019-09-03 21:30:36.235: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+savePersonTest(): expected: Person{personId=999994, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}} actual: Person{personId=999994, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:30:36.304: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+2019-09-03 21:30:36.335: svms.Repository.PersonRepositoryImpl: 
+deletePerson(): query: DELETE FROM person WHERE personid = ? and personId: 999994
+2019-09-03 21:30:36.467: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999992, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:30:36.504: svms.Repository.PersonRepositoryImpl: 
+updatePersonStatus(): query: UPDATE person SET status = ? WHERE personid = ? and personId: 999992
+2019-09-03 21:30:36.551: svms.PersonEndToEndTest: 
+2019-09-03 21:30:36.551: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+updatePersonStatusTest(): expected: A actual: A
+2019-09-03 21:30:36.567: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+2019-09-03 21:30:36.582: svms.Repository.PersonRepositoryImpl: 
+deletePerson(): query: DELETE FROM person WHERE personid = ? and personId: 999992
+2019-09-03 21:30:36.604: svms.PersonEndToEndTest: 
+deletePersonTest()
+2019-09-03 21:30:36.604: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999993, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:30:36.636: svms.Repository.PersonRepositoryImpl: 
+deletePerson(): query: DELETE FROM person WHERE personid = ? and personId: 999993
+2019-09-03 21:30:36.652: svms.Repository.PersonRepositoryImpl: 
+findAllPersons(): query: SELECT * FROM person
+2019-09-03 21:30:36.667: svms.PersonEndToEndTest: 
+findAllPersonsTest(): [Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}]
+2019-09-03 21:30:36.667: svms.PersonEndToEndTest: 
+2019-09-03 21:30:36.667: svms.Repository.PersonRepositoryImpl: 
+findPersonByStatus(): query: SELECT * FROM person WHERE status = :status and params: {status=A}
+2019-09-03 21:30:38.723: svms.PersonEndToEndTest: 
+2019-09-03 21:30:38.723: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+2019-09-03 21:30:40.773: svms.PersonEndToEndTest: 
+### started cleanupDataForPerson() ###
+2019-09-03 21:30:40.773: svms.Repository.PersonRepositoryImpl: 
+findAllPersons(): query: SELECT * FROM person
+cleanupDataForPerson(): data before cleanup: [Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:30:35.502', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}]
+2019-09-03 21:30:40.826: svms.Repository.PersonRepositoryImpl: 
+cleanUp(): query: DELETE FROM person
+2019-09-03 21:30:40.873: svms.Repository.PersonRepositoryImpl: 
+findAllPersons(): query: SELECT * FROM person
+cleanupDataForPerson(): data after cleanup: []
+### ended cleanupDataForPerson() ###
+2019-09-03 21:30:40.888: svms.PersonEndToEndTest: 
+tearDown()
+2019-09-03 21:31:12.916: svms.PersonEndToEndTest: 
+### started createDataForPerson() ###
+2019-09-03 21:31:12.916: svms.Repository.PersonRepositoryImpl: 
+cleanUp(): query: DELETE FROM person
+2019-09-03 21:31:13.291: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:13.4: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:13.416: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:13.447: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:13.463: svms.Repository.PersonRepositoryImpl: 
+findAllPersons(): query: SELECT * FROM person
+createDataForPerson(): data[Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}]
+### ended createDataForPerson() ###
+2019-09-03 21:31:13.494: svms.PersonEndToEndTest: 
+dataSetup(): 
+2019-09-03 21:31:13.494: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999994, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:13.51: svms.PersonEndToEndTest: 
+2019-09-03 21:31:13.51: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+savePersonTest(): expected: Person{personId=999994, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}} actual: Person{personId=999994, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:13.541: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+2019-09-03 21:31:13.556: svms.Repository.PersonRepositoryImpl: 
+deletePerson(): query: DELETE FROM person WHERE personid = ? and personId: 999994
+2019-09-03 21:31:13.572: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999992, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:13.588: svms.Repository.PersonRepositoryImpl: 
+updatePersonStatus(): query: UPDATE person SET status = ? WHERE personid = ? and personId: 999992
+2019-09-03 21:31:13.603: svms.PersonEndToEndTest: 
+2019-09-03 21:31:13.603: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+updatePersonStatusTest(): expected: A actual: A
+2019-09-03 21:31:13.619: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+2019-09-03 21:31:13.635: svms.Repository.PersonRepositoryImpl: 
+deletePerson(): query: DELETE FROM person WHERE personid = ? and personId: 999992
+2019-09-03 21:31:13.65: svms.PersonEndToEndTest: 
+deletePersonTest()
+2019-09-03 21:31:13.65: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999993, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:13.666: svms.Repository.PersonRepositoryImpl: 
+deletePerson(): query: DELETE FROM person WHERE personid = ? and personId: 999993
+2019-09-03 21:31:13.697: svms.Repository.PersonRepositoryImpl: 
+findAllPersons(): query: SELECT * FROM person
+2019-09-03 21:31:13.713: svms.PersonEndToEndTest: 
+findAllPersonsTest(): [Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}]
+2019-09-03 21:31:13.713: svms.PersonEndToEndTest: 
+2019-09-03 21:31:13.713: svms.Repository.PersonRepositoryImpl: 
+findPersonByStatus(): query: SELECT * FROM person WHERE status = :status and params: {status=A}
+2019-09-03 21:31:15.79: svms.PersonEndToEndTest: 
+2019-09-03 21:31:15.79: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+findPersonByIdTest(): expected: Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}} actual: Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:15.806: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+2019-09-03 21:31:15.853: svms.PersonEndToEndTest: 
+### started cleanupDataForPerson() ###
+2019-09-03 21:31:15.853: svms.Repository.PersonRepositoryImpl: 
+findAllPersons(): query: SELECT * FROM person
+cleanupDataForPerson(): data before cleanup: [Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:12.916', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}]
+2019-09-03 21:31:15.884: svms.Repository.PersonRepositoryImpl: 
+cleanUp(): query: DELETE FROM person
+2019-09-03 21:31:16.072: svms.Repository.PersonRepositoryImpl: 
+findAllPersons(): query: SELECT * FROM person
+cleanupDataForPerson(): data after cleanup: []
+### ended cleanupDataForPerson() ###
+2019-09-03 21:31:16.118: svms.PersonEndToEndTest: 
+tearDown()
+2019-09-03 21:31:35.644: svms.PersonEndToEndTest: 
+### started createDataForPerson() ###
+2019-09-03 21:31:35.644: svms.Repository.PersonRepositoryImpl: 
+cleanUp(): query: DELETE FROM person
+2019-09-03 21:31:35.972: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:36.066: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:36.081: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:36.113: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:36.144: svms.Repository.PersonRepositoryImpl: 
+findAllPersons(): query: SELECT * FROM person
+createDataForPerson(): data[Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}]
+### ended createDataForPerson() ###
+2019-09-03 21:31:36.175: svms.PersonEndToEndTest: 
+dataSetup(): 
+2019-09-03 21:31:36.175: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999994, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:36.191: svms.PersonEndToEndTest: 
+2019-09-03 21:31:36.191: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+savePersonTest(): expected: Person{personId=999994, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}} actual: Person{personId=999994, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:36.222: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+2019-09-03 21:31:36.238: svms.Repository.PersonRepositoryImpl: 
+deletePerson(): query: DELETE FROM person WHERE personid = ? and personId: 999994
+2019-09-03 21:31:36.253: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999992, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:36.269: svms.Repository.PersonRepositoryImpl: 
+updatePersonStatus(): query: UPDATE person SET status = ? WHERE personid = ? and personId: 999992
+2019-09-03 21:31:36.284: svms.PersonEndToEndTest: 
+2019-09-03 21:31:36.284: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+updatePersonStatusTest(): expected: A actual: A
+2019-09-03 21:31:36.316: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+2019-09-03 21:31:36.331: svms.Repository.PersonRepositoryImpl: 
+deletePerson(): query: DELETE FROM person WHERE personid = ? and personId: 999992
+2019-09-03 21:31:36.347: svms.PersonEndToEndTest: 
+deletePersonTest()
+2019-09-03 21:31:36.347: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999993, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:36.363: svms.Repository.PersonRepositoryImpl: 
+deletePerson(): query: DELETE FROM person WHERE personid = ? and personId: 999993
+2019-09-03 21:31:36.378: svms.Repository.PersonRepositoryImpl: 
+findAllPersons(): query: SELECT * FROM person
+2019-09-03 21:31:36.394: svms.PersonEndToEndTest: 
+findAllPersonsTest(): [Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}]
+2019-09-03 21:31:36.409: svms.PersonEndToEndTest: 
+2019-09-03 21:31:36.409: svms.Repository.PersonRepositoryImpl: 
+findPersonByStatus(): query: SELECT * FROM person WHERE status = :status and params: {status=A}
+findPersonByStatusTest(): expected: 3 actual: 4
+2019-09-03 21:31:36.488: svms.Repository.PersonRepositoryImpl: 
+findPersonByStatus(): query: SELECT * FROM person WHERE status = :status and params: {status=A}
+findPersonByStatusTest(): expected: [Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}] actual: [Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}]
+2019-09-03 21:31:36.519: svms.Repository.PersonRepositoryImpl: 
+findPersonByStatus(): query: SELECT * FROM person WHERE status = :status and params: {status=A}
+2019-09-03 21:31:36.534: svms.Repository.PersonRepositoryImpl: 
+findPersonByStatus(): query: SELECT * FROM person WHERE status = :status and params: {status=A}
+2019-09-03 21:31:36.55: svms.PersonEndToEndTest: 
+2019-09-03 21:31:36.55: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+findPersonByIdTest(): expected: Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}} actual: Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:31:35.644', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:31:36.566: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+2019-09-03 21:31:38.675: svms.PersonEndToEndTest: 
+### started cleanupDataForPerson() ###
+2019-09-03 21:31:38.675: svms.Repository.PersonRepositoryImpl: 
+findAllPersons(): query: SELECT * FROM person
+2019-09-03 21:32:56.436: svms.AddressEndToEndTest: 
+### started createDataForAddress() ###
+2019-09-03 21:32:56.436: svms.Repository.AddressRepositoryImpl: 
+cleanUp(): query: DELETE FROM address
+2019-09-03 21:32:56.842: svms.Repository.AddressRepositoryImpl: 
+saveAddress(): query: INSERT INTO address VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) and address: Address{addressId=999998, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='A', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:32:56.998: svms.Repository.AddressRepositoryImpl: 
+saveAddress(): query: INSERT INTO address VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) and address: Address{addressId=999997, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}
+2019-09-03 21:32:57.03: svms.Repository.AddressRepositoryImpl: 
+saveAddress(): query: INSERT INTO address VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) and address: Address{addressId=999996, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}
+2019-09-03 21:32:57.045: svms.Repository.AddressRepositoryImpl: 
+saveAddress(): query: INSERT INTO address VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) and address: Address{addressId=999995, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}
+2019-09-03 21:32:57.061: svms.Repository.AddressRepositoryImpl: 
+findAllAddress(): query: SELECT * FROM address
+createDataForAddress(): data[Address{addressId=999995, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Address{addressId=999998, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='A', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Address{addressId=999997, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Address{addressId=999996, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+### ended createDataForAddress() ###
+2019-09-03 21:32:57.108: svms.AddressEndToEndTest: 
+dataSetup(): 
+2019-09-03 21:32:57.108: svms.AddressEndToEndTest: 
+2019-09-03 21:32:57.108: svms.Repository.AddressRepositoryImpl: 
+findAddressByStatus(): query: SELECT * FROM address WHERE status = :status and params: {status=I}
+findAddressByStatusTest(): expected: 3 actual: 3
+2019-09-03 21:32:57.17: svms.Repository.AddressRepositoryImpl: 
+findAddressByStatus(): query: SELECT * FROM address WHERE status = :status and params: {status=I}
+findAddressByStatusTest(): expected: [Address{addressId=999997, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Address{addressId=999996, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Address{addressId=999995, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}] actual: [Address{addressId=999995, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Address{addressId=999997, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Address{addressId=999996, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+2019-09-03 21:32:57.201: svms.Repository.AddressRepositoryImpl: 
+findAddressByStatus(): query: SELECT * FROM address WHERE status = :status and params: {status=I}
+2019-09-03 21:32:57.233: svms.Repository.AddressRepositoryImpl: 
+findAddressByStatus(): query: SELECT * FROM address WHERE status = :status and params: {status=I}
+2019-09-03 21:32:57.248: svms.AddressEndToEndTest: 
+deleteAddressTest()
+2019-09-03 21:32:57.248: svms.Repository.AddressRepositoryImpl: 
+saveAddress(): query: INSERT INTO address VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) and address: Address{addressId=999993, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999993'}}
+2019-09-03 21:32:57.28: svms.Repository.AddressRepositoryImpl: 
+deleteAddress(): query: INSERT INTO address VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) and id: 999993
+2019-09-03 21:32:57.311: svms.Repository.AddressRepositoryImpl: 
+findAllAddress(): query: SELECT * FROM address
+2019-09-03 21:32:57.326: svms.AddressEndToEndTest: 
+findAllAddressTest(): [Address{addressId=999995, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Address{addressId=999998, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='A', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Address{addressId=999997, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Address{addressId=999996, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+2019-09-03 21:32:57.326: svms.Repository.AddressRepositoryImpl: 
+saveAddress(): query: INSERT INTO address VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) and address: Address{addressId=999994, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999994'}}
+2019-09-03 21:32:57.342: svms.AddressEndToEndTest: 
+2019-09-03 21:32:57.342: svms.Repository.AddressRepositoryImpl: 
+findAddressById(): query: SELECT * FROM address WHERE addressid = :addressid
+saveAddressTest(): expected: Address{addressId=999994, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999994'}} actual: Address{addressId=999994, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999994'}}
+2019-09-03 21:32:57.358: svms.Repository.AddressRepositoryImpl: 
+findAddressById(): query: SELECT * FROM address WHERE addressid = :addressid
+2019-09-03 21:32:57.389: svms.Repository.AddressRepositoryImpl: 
+deleteAddress(): query: INSERT INTO address VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) and id: 999994
+2019-09-03 21:32:57.405: svms.AddressEndToEndTest: 
+2019-09-03 21:32:57.405: svms.Repository.AddressRepositoryImpl: 
+findAddressById(): query: SELECT * FROM address WHERE addressid = :addressid
+findAddressByIdTest(): expected: Address{addressId=999998, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='A', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}} actual: Address{addressId=999998, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='A', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:32:57.42: svms.Repository.AddressRepositoryImpl: 
+findAddressById(): query: SELECT * FROM address WHERE addressid = :addressid
+2019-09-03 21:32:57.451: svms.Repository.AddressRepositoryImpl: 
+saveAddress(): query: INSERT INTO address VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) and address: Address{addressId=999992, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999992'}}
+2019-09-03 21:32:59.545: svms.AddressEndToEndTest: 
+### started cleanupDataForAddress() ###
+2019-09-03 21:32:59.545: svms.Repository.AddressRepositoryImpl: 
+findAllAddress(): query: SELECT * FROM address
+cleanupDataForAddress(): data before cleanup: [Address{addressId=999995, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Address{addressId=999998, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='A', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Address{addressId=999997, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Address{addressId=999996, houseNo='plot no 4', street='dwaraka nagar cology', landmark='patancheru', villageTownCity='kistareddypet', district='sangareddy', state='telangana', pincode=502139, status='I', dBLog=DBLog{timestamp='2019-09-03 21:32:56.436', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+2019-09-03 21:32:59.592: svms.Repository.AddressRepositoryImpl: 
+cleanUp(): query: DELETE FROM address
+2019-09-03 21:32:59.607: svms.Repository.AddressRepositoryImpl: 
+findAllAddress(): query: SELECT * FROM address
+cleanupDataForAddress(): data after cleanup: []
+### ended cleanupDataForAddress() ###
+2019-09-03 21:32:59.623: svms.AddressEndToEndTest: 
+tearDown()
+2019-09-03 21:32:59.685: svms.LoginUserEndToEndTest: 
+### started createDataForLoginUser() ###
+2019-09-03 21:32:59.685: svms.Repository.LoginUserRepositoryImpl: 
+cleanUp(): query: DELETE FROM loginuser
+2019-09-03 21:32:59.732: svms.Repository.LoginUserRepositoryImpl: 
+saveLoginUser(): query: INSERT INTO loginuser VALUES(?,?,?,?,?,?,?,?,?,?,?) and loginUser: LoginUser{id=999998, username='rambati999998', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:32:59.795: svms.Repository.LoginUserRepositoryImpl: 
+saveLoginUser(): query: INSERT INTO loginuser VALUES(?,?,?,?,?,?,?,?,?,?,?) and loginUser: LoginUser{id=999997, username='rambati999997', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}
+2019-09-03 21:32:59.841: svms.Repository.LoginUserRepositoryImpl: 
+saveLoginUser(): query: INSERT INTO loginuser VALUES(?,?,?,?,?,?,?,?,?,?,?) and loginUser: LoginUser{id=999996, username='rambati999996', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}
+2019-09-03 21:32:59.857: svms.Repository.LoginUserRepositoryImpl: 
+saveLoginUser(): query: INSERT INTO loginuser VALUES(?,?,?,?,?,?,?,?,?,?,?) and loginUser: LoginUser{id=999995, username='rambati999995', password='test', status='A', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}
+2019-09-03 21:32:59.888: svms.Repository.LoginUserRepositoryImpl: 
+saveLoginUser(): query: INSERT INTO loginuser VALUES(?,?,?,?,?,?,?,?,?,?,?) and loginUser: LoginUser{id=999994, username='rambati999994', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='S', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999994'}}
+2019-09-03 21:32:59.904: svms.Repository.LoginUserRepositoryImpl: 
+saveLoginUser(): query: INSERT INTO loginuser VALUES(?,?,?,?,?,?,?,?,?,?,?) and loginUser: LoginUser{id=999993, username='rambati999993', password='test', status='A', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999993'}}
+2019-09-03 21:32:59.92: svms.Repository.LoginUserRepositoryImpl: 
+saveLoginUser(): query: INSERT INTO loginuser VALUES(?,?,?,?,?,?,?,?,?,?,?) and loginUser: LoginUser{id=999992, username='rambati999992', password='test', status='A', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='F', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999992'}}
+2019-09-03 21:32:59.935: svms.Repository.LoginUserRepositoryImpl: 
+saveLoginUser(): query: INSERT INTO loginuser VALUES(?,?,?,?,?,?,?,?,?,?,?) and loginUser: LoginUser{id=999991, username='rambati999991', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}}
+2019-09-03 21:32:59.951: svms.Repository.LoginUserRepositoryImpl: 
+saveLoginUser(): query: INSERT INTO loginuser VALUES(?,?,?,?,?,?,?,?,?,?,?) and loginUser: LoginUser{id=999990, username='rambati999990', password='test', status='null', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999990'}}
+2019-09-03 21:32:59.966: svms.Repository.LoginUserRepositoryImpl: 
+findAllLoginUsers(): query: SELECT * FROM loginuser
+createDataForLoginUser(): data[LoginUser{id=999997, username='rambati999997', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, LoginUser{id=999996, username='rambati999996', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, LoginUser{id=999995, username='rambati999995', password='test', status='A', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, LoginUser{id=999994, username='rambati999994', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='S', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999994'}}, LoginUser{id=999993, username='rambati999993', password='test', status='A', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999993'}}, LoginUser{id=999992, username='rambati999992', password='test', status='A', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='F', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999992'}}, LoginUser{id=999991, username='rambati999991', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}}, LoginUser{id=999990, username='rambati999990', password='test', status='null', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999990'}}, LoginUser{id=999998, username='rambati999998', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}]
+### ended createDataForLoginUser() ###
+2019-09-03 21:33:00.013: svms.LoginUserEndToEndTest: 
+dataSetup(): 
+2019-09-03 21:33:00.013: svms.Repository.LoginUserRepositoryImpl: 
+saveLoginUser(): query: INSERT INTO loginuser VALUES(?,?,?,?,?,?,?,?,?,?,?) and loginUser: LoginUser{id=963852, username='rambati963852', password='test', status='null', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='963852'}}
+2019-09-03 21:33:00.029: svms.Repository.LoginUserRepositoryImpl: 
+updateLoginUserStatus(): query: UPDATE loginuser SET status = ? WHERE id = ? and id: 963852
+2019-09-03 21:33:00.107: svms.LoginUserEndToEndTest: 
+2019-09-03 21:33:00.107: svms.Repository.LoginUserRepositoryImpl: 
+findLoginUserById(): query: SELECT * FROM loginuser WHERE id = :id and params: {id=963852}
+updateLoginUserStatusTest(): expected: U actual: U
+2019-09-03 21:33:00.154: svms.Repository.LoginUserRepositoryImpl: 
+findLoginUserById(): query: SELECT * FROM loginuser WHERE id = :id and params: {id=963852}
+2019-09-03 21:33:00.185: svms.Repository.LoginUserRepositoryImpl: 
+deleteLoginUser(): query: DELETE FROM loginuser WHERE id = ? and id: 963852
+2019-09-03 21:33:00.232: svms.LoginUserEndToEndTest: 
+deleteLoginUserTest()
+2019-09-03 21:33:00.232: svms.Repository.LoginUserRepositoryImpl: 
+saveLoginUser(): query: INSERT INTO loginuser VALUES(?,?,?,?,?,?,?,?,?,?,?) and loginUser: LoginUser{id=1234, username='rambati01234', password='test', status='A', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='1234'}}
+2019-09-03 21:33:02.294: svms.Repository.LoginUserRepositoryImpl: 
+saveLoginUser(): query: INSERT INTO loginuser VALUES(?,?,?,?,?,?,?,?,?,?,?) and loginUser: LoginUser{id=987654, username='rambati987654', password='test', status='null', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='987654'}}
+2019-09-03 21:33:02.341: svms.Repository.LoginUserRepositoryImpl: 
+updateLoginUserPassword(): query: UPDATE loginuser SET password = ? WHERE id = ? and id: 987654
+2019-09-03 21:33:02.388: svms.LoginUserEndToEndTest: 
+2019-09-03 21:33:02.388: svms.Repository.LoginUserRepositoryImpl: 
+findLoginUserById(): query: SELECT * FROM loginuser WHERE id = :id and params: {id=987654}
+updateLoginUserPasswordTest(): expected: updated_test actual: updated_test
+2019-09-03 21:33:02.419: svms.Repository.LoginUserRepositoryImpl: 
+findLoginUserById(): query: SELECT * FROM loginuser WHERE id = :id and params: {id=987654}
+2019-09-03 21:33:02.435: svms.Repository.LoginUserRepositoryImpl: 
+deleteLoginUser(): query: DELETE FROM loginuser WHERE id = ? and id: 987654
+2019-09-03 21:33:02.466: svms.Repository.LoginUserRepositoryImpl: 
+findAllLoginUsers(): query: SELECT * FROM loginuser
+2019-09-03 21:33:02.481: svms.LoginUserEndToEndTest: 
+findAllLoginUsersTest(): [LoginUser{id=999997, username='rambati999997', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, LoginUser{id=999996, username='rambati999996', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, LoginUser{id=999995, username='rambati999995', password='test', status='A', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, LoginUser{id=999994, username='rambati999994', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='S', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999994'}}, LoginUser{id=999993, username='rambati999993', password='test', status='A', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999993'}}, LoginUser{id=999992, username='rambati999992', password='test', status='A', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='F', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999992'}}, LoginUser{id=999991, username='rambati999991', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}}, LoginUser{id=999990, username='rambati999990', password='test', status='null', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999990'}}, LoginUser{id=999998, username='rambati999998', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}]
+2019-09-03 21:33:02.481: svms.LoginUserEndToEndTest: 
+2019-09-03 21:33:02.481: svms.Repository.LoginUserRepositoryImpl: 
+findLoginUserByStatus(): query: SELECT * FROM loginuser WHERE status = :status and params: {status=I}
+findLoginUserByStatusTest(): expected: 5 actual: 5
+2019-09-03 21:33:02.513: svms.Repository.LoginUserRepositoryImpl: 
+findLoginUserByStatus(): query: SELECT * FROM loginuser WHERE status = :status and params: {status=A}
+findLoginUserByStatusTest(): expected: [LoginUser{id=999995, username='rambati999995', password='test', status='A', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, LoginUser{id=999993, username='rambati999993', password='test', status='A', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999993'}}, LoginUser{id=999992, username='rambati999992', password='test', status='A', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='F', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999992'}}] actual: [LoginUser{id=999995, username='rambati999995', password='test', status='A', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, LoginUser{id=999993, username='rambati999993', password='test', status='A', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999993'}}, LoginUser{id=999992, username='rambati999992', password='test', status='A', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='F', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999992'}}]
+2019-09-03 21:33:02.56: svms.Repository.LoginUserRepositoryImpl: 
+findLoginUserByStatus(): query: SELECT * FROM loginuser WHERE status = :status and params: {status=I}
+2019-09-03 21:33:02.575: svms.Repository.LoginUserRepositoryImpl: 
+findLoginUserByStatus(): query: SELECT * FROM loginuser WHERE status = :status and params: {status=A}
+2019-09-03 21:33:02.591: svms.LoginUserEndToEndTest: 
+2019-09-03 21:33:02.591: svms.Repository.LoginUserRepositoryImpl: 
+findLoginUserById(): query: SELECT * FROM loginuser WHERE id = :id and params: {id=95103}
+2019-09-03 21:33:02.606: svms.LoginUserEndToEndTest: 
+2019-09-03 21:33:02.606: svms.Repository.LoginUserRepositoryImpl: 
+findLoginUserById(): query: SELECT * FROM loginuser WHERE id = :id and params: {id=999998}
+findLoginUserByIdTest(): expected: LoginUser{id=999998, username='rambati999998', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}} actual: LoginUser{id=999998, username='rambati999998', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:33:02.638: svms.Repository.LoginUserRepositoryImpl: 
+findLoginUserById(): query: SELECT * FROM loginuser WHERE id = :id and params: {id=999998}
+2019-09-03 21:33:02.653: svms.LoginUserEndToEndTest: 
+2019-09-03 21:33:02.653: svms.Repository.LoginUserRepositoryImpl: 
+findLoginUserByUsername(): query: SELECT * FROM loginuser WHERE username = :username and params: {username=rambati999997}
+findLoginUserByUsernameTest(): expected: LoginUser{id=999997, username='rambati999997', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}} actual: LoginUser{id=999997, username='rambati999997', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='null', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}
+2019-09-03 21:33:02.669: svms.Repository.LoginUserRepositoryImpl: 
+findLoginUserByUsername(): query: SELECT * FROM loginuser WHERE username = :username and params: {username=rambati999997}
+2019-09-03 21:33:02.685: svms.LoginUserEndToEndTest: 
+2019-09-03 21:33:02.685: svms.Repository.LoginUserRepositoryImpl: 
+findLoginUserByLastAttemptStatus(): query: SELECT * FROM loginuser WHERE last_attempt_status = :lastattemptstatus and params: {lastattemptstatus=S}
+findLoginUserByLastAttemptStatusTest(): expected: 1 actual: 1
+2019-09-03 21:33:02.7: svms.Repository.LoginUserRepositoryImpl: 
+findLoginUserByLastAttemptStatus(): query: SELECT * FROM loginuser WHERE last_attempt_status = :lastattemptstatus and params: {lastattemptstatus=S}
+findLoginUserByLastAttemptStatusTest(): expected: [LoginUser{id=999994, username='rambati999994', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='S', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999994'}}] actual: [LoginUser{id=999994, username='rambati999994', password='test', status='I', loginTime='2019-09-03 21:32:59.685', logoffTime='2019-09-03 21:32:59.685', lastAttemptStatus='S', dbLog=DBLog{timestamp='2019-09-03 21:32:59.685', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999994'}}]
+2019-09-03 21:33:02.716: svms.Repository.LoginUserRepositoryImpl: 
+findLoginUserByLastAttemptStatus(): query: SELECT * FROM loginuser WHERE last_attempt_status = :lastattemptstatus and params: {lastattemptstatus=S}
+2019-09-03 21:33:02.731: svms.Repository.LoginUserRepositoryImpl: 
+findLoginUserByLastAttemptStatus(): query: SELECT * FROM loginuser WHERE last_attempt_status = :lastattemptstatus and params: {lastattemptstatus=S}
+2019-09-03 21:33:02.747: svms.LoginUserEndToEndTest: 
+### started cleanupDataForLoginUser() ###
+2019-09-03 21:33:02.747: svms.Repository.LoginUserRepositoryImpl: 
+findAllLoginUsers(): query: SELECT * FROM loginuser
+2019-09-03 21:33:04.872: svms.PersonEndToEndTest: 
+### started createDataForPerson() ###
+2019-09-03 21:33:04.872: svms.Repository.PersonRepositoryImpl: 
+cleanUp(): query: DELETE FROM person
+2019-09-03 21:33:04.903: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:33:04.918: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:33:04.934: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:33:04.95: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:33:04.965: svms.Repository.PersonRepositoryImpl: 
+findAllPersons(): query: SELECT * FROM person
+createDataForPerson(): data[Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}]
+### ended createDataForPerson() ###
+2019-09-03 21:33:04.981: svms.PersonEndToEndTest: 
+dataSetup(): 
+2019-09-03 21:33:04.981: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999994, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:33:04.996: svms.PersonEndToEndTest: 
+2019-09-03 21:33:04.996: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+savePersonTest(): expected: Person{personId=999994, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}} actual: Person{personId=999994, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:33:05.012: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+2019-09-03 21:33:05.028: svms.Repository.PersonRepositoryImpl: 
+deletePerson(): query: DELETE FROM person WHERE personid = ? and personId: 999994
+2019-09-03 21:33:05.043: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999992, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:33:05.059: svms.Repository.PersonRepositoryImpl: 
+updatePersonStatus(): query: UPDATE person SET status = ? WHERE personid = ? and personId: 999992
+2019-09-03 21:33:05.075: svms.PersonEndToEndTest: 
+2019-09-03 21:33:05.075: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+updatePersonStatusTest(): expected: A actual: A
+2019-09-03 21:33:05.09: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+2019-09-03 21:33:05.106: svms.Repository.PersonRepositoryImpl: 
+deletePerson(): query: DELETE FROM person WHERE personid = ? and personId: 999992
+2019-09-03 21:33:05.121: svms.PersonEndToEndTest: 
+deletePersonTest()
+2019-09-03 21:33:05.121: svms.Repository.PersonRepositoryImpl: 
+savePerson(): query: INSERT INTO person VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?) and person: Person{personId=999993, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:33:05.137: svms.Repository.PersonRepositoryImpl: 
+deletePerson(): query: DELETE FROM person WHERE personid = ? and personId: 999993
+2019-09-03 21:33:05.153: svms.Repository.PersonRepositoryImpl: 
+findAllPersons(): query: SELECT * FROM person
+2019-09-03 21:33:05.168: svms.PersonEndToEndTest: 
+findAllPersonsTest(): [Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}]
+2019-09-03 21:33:05.168: svms.PersonEndToEndTest: 
+2019-09-03 21:33:05.168: svms.Repository.PersonRepositoryImpl: 
+findPersonByStatus(): query: SELECT * FROM person WHERE status = :status and params: {status=A}
+findPersonByStatusTest(): expected: 3 actual: 4
+2019-09-03 21:33:05.184: svms.Repository.PersonRepositoryImpl: 
+findPersonByStatus(): query: SELECT * FROM person WHERE status = :status and params: {status=A}
+2019-09-03 21:33:07.215: svms.PersonEndToEndTest: 
+2019-09-03 21:33:07.215: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+findPersonByIdTest(): expected: Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}} actual: Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-03 21:33:07.246: svms.Repository.PersonRepositoryImpl: 
+findPersonById(): query: SELECT * FROM person WHERE personid = :personid
+2019-09-03 21:33:07.262: svms.PersonEndToEndTest: 
+### started cleanupDataForPerson() ###
+2019-09-03 21:33:07.262: svms.Repository.PersonRepositoryImpl: 
+findAllPersons(): query: SELECT * FROM person
+cleanupDataForPerson(): data before cleanup: [Person{personId=999998, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999997, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999996, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Person{personId=999995, firstName='ravindra', lastName='ambati', gender='M', dateOfBirth='3892-08-23 00:00:00.0', dateOfJoin='3917-07-01 00:00:00.0', contact=1234567890, alternativeContact=1234567890, status='A', addressId=999998, dBLog=DBLog{timestamp='2019-09-03 21:33:04.872', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}]
+2019-09-03 21:33:07.293: svms.Repository.PersonRepositoryImpl: 
+cleanUp(): query: DELETE FROM person
+2019-09-03 21:33:07.308: svms.Repository.PersonRepositoryImpl: 
+findAllPersons(): query: SELECT * FROM person
+cleanupDataForPerson(): data after cleanup: []
+### ended cleanupDataForPerson() ###
+2019-09-03 21:33:07.324: svms.PersonEndToEndTest: 
+tearDown()

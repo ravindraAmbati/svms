@@ -9,18 +9,15 @@ public class Utility {
     private static String applicationName = "svms";
     private static String version = "1.0v";
 
-    public static String getCurrrentTimeStamp(){
-        Date date = new Date();
-        date.getTime();
-        Timestamp timestamp = new Timestamp(date.getTime());
-        return timestamp.toString();
+    public static String getCurrrentTimeStamp() {
+        return new Timestamp(new Date().getTime()).toString();
     }
 
-    public static String getApplication(){
-        return applicationName +"-"+version;
+    public static String getApplication() {
+        return applicationName + "-" + version;
     }
 
-    public static String getHostName(){
+    public static String getHostName() {
         try {
             return InetAddress.getLocalHost().getHostName();
         } catch (UnknownHostException e) {
@@ -29,7 +26,11 @@ public class Utility {
         }
     }
 
-    public static String getUserId(int id){
+    public static String getUserId(int id) {
         return String.valueOf(id);
+    }
+
+    public static String getTimeStamp(int year, int month, int date) {
+        return new Timestamp(new Date(year, month, date).getTime()).toString();
     }
 }

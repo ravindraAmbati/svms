@@ -29,4 +29,9 @@
         <property name="namedParameterJdbcTemplate" ref="njt"/>
     </bean>
 
+    <bean id="personRepo" class="svms.Repository.PersonRepositoryImpl">
+        <property name="jdbcTemplate" ref="jt"/>
+        <property name="namedParameterJdbcTemplate" ref="njt"/>
+    </bean>
+
 </beans>
