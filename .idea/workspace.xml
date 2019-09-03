@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9ae5cda-65da-459f-9cc6-1b499db4d0fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sql/create_person.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Entity/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/PersonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/PersonRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/PersonRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/PersonStatements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/svms/PersonEndToEndTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/create_employee.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/EmployeeRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/EmployeeRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/EmployeeStatements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/svms/EmployeeEndToEndTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log.out" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/Utility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/svms/AddressEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/AddressEndToEndTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/svms/LoginUserEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/LoginUserEndToEndTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/svms/PersonEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/PersonEndToEndTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/testApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testApplicationContext.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -141,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567433962047</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added entity Person">
+      <created>1567526863028</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567526863028</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,7 +168,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added entity Address and Modified entity LoginUser" />
-    <option name="LAST_COMMIT_MESSAGE" value="added entity Address and Modified entity LoginUser" />
+    <MESSAGE value="added entity Person" />
+    <option name="LAST_COMMIT_MESSAGE" value="added entity Person" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
