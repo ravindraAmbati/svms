@@ -263,3 +263,760 @@ cleanupDataForPerson(): data after cleanup: []
 ### ended cleanupDataForPerson() ###
 2019-09-03 23:18:29.994: svms.PersonEndToEndTest: 
 tearDown()
+2019-09-05 09:44:47.424: svms.StudentEndToEndTest: 
+### started cleanupDataForStudent() ###
+2019-09-05 09:45:41.234: svms.StudentEndToEndTest: 
+### started createDataForStudent() ###
+2019-09-05 09:45:41.234: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:45:44.154: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:45:44.492: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:45:44.596: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:45:44.698: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+createDataForStudent(): data[Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}]
+### ended createDataForStudent() ###
+2019-09-05 09:45:45.087: svms.StudentEndToEndTest: 
+dataSetup(): 
+2019-09-05 09:45:45.097: svms.StudentEndToEndTest: 
+deleteStudentTest()
+2019-09-05 09:45:45.098: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:45:45.139: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:45:45.221: svms.StudentEndToEndTest: 
+2019-09-05 09:45:45.221: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: 3 actual: 3
+2019-09-05 09:45:45.368: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: [Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}] actual: [Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}]
+2019-09-05 09:45:45.425: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+2019-09-05 09:45:45.475: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+2019-09-05 09:45:45.535: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:45:45.612: svms.StudentEndToEndTest: 
+2019-09-05 09:45:45.613: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:45:45.616: svms.StudentEndToEndTest: 
+2019-09-05 09:45:45.616: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:45:45.616: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+2019-09-05 09:45:45.669: svms.StudentEndToEndTest: 
+findAllStudentsTest(): [Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}}]
+2019-09-05 09:45:45.684: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:45:45.732: svms.Repository.StudentRepositoryImpl: 
+updateStudentStatus(): query: UPDATE  student SET status = ? WHERE  studentid = ?
+2019-09-05 09:45:45.797: svms.StudentEndToEndTest: 
+2019-09-05 09:45:45.797: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:45:45.802: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:45:45.848: svms.Repository.StudentRepositoryImpl: 
+updateStudentFee(): query: UPDATE  student SET fee = ? WHERE  studentid = ?
+2019-09-05 09:45:45.904: svms.StudentEndToEndTest: 
+2019-09-05 09:45:45.904: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:45:45.906: svms.StudentEndToEndTest: 
+### started cleanupDataForStudent() ###
+2019-09-05 09:45:45.906: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+cleanupDataForStudent(): data before cleanup: [Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999992, personId=999992, classId=999992, fee=300, status='I', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999992'}}, Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}}, Student{studentId=999993, personId=999993, classId=999993, fee=200, status='A', dBLog=DBLog{timestamp='2019-09-05 09:45:41.234', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999993'}}]
+2019-09-05 09:45:45.954: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:45:45.988: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+2019-09-05 09:46:29.636: svms.StudentEndToEndTest: 
+### started createDataForStudent() ###
+2019-09-05 09:46:29.636: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:46:30.06: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:46:30.198: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:46:30.218: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:46:30.266: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+createDataForStudent(): data[Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}]
+### ended createDataForStudent() ###
+2019-09-05 09:46:30.31: svms.StudentEndToEndTest: 
+dataSetup(): 
+2019-09-05 09:46:30.313: svms.StudentEndToEndTest: 
+deleteStudentTest()
+2019-09-05 09:46:30.313: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:46:30.334: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:46:30.367: svms.StudentEndToEndTest: 
+2019-09-05 09:46:30.367: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: 3 actual: 3
+2019-09-05 09:46:30.393: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: [Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}] actual: [Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}]
+2019-09-05 09:46:30.411: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+2019-09-05 09:46:30.43: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+2019-09-05 09:46:30.449: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:46:30.466: svms.StudentEndToEndTest: 
+2019-09-05 09:46:30.466: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+saveStudentTest(): expected: Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}} actual: Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}}
+2019-09-05 09:46:30.524: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:46:30.558: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:46:30.625: svms.StudentEndToEndTest: 
+2019-09-05 09:46:30.625: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:46:30.669: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+2019-09-05 09:46:30.699: svms.StudentEndToEndTest: 
+findAllStudentsTest(): [Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}]
+2019-09-05 09:46:30.703: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:46:30.759: svms.Repository.StudentRepositoryImpl: 
+updateStudentStatus(): query: UPDATE  student SET status = ? WHERE  studentid = ?
+2019-09-05 09:46:30.799: svms.StudentEndToEndTest: 
+2019-09-05 09:46:30.8: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:46:32.894: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:46:32.964: svms.Repository.StudentRepositoryImpl: 
+updateStudentFee(): query: UPDATE  student SET fee = ? WHERE  studentid = ?
+2019-09-05 09:46:32.98: svms.StudentEndToEndTest: 
+2019-09-05 09:46:32.98: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+updateEmployeeStatusTest(): expected: 300 actual: 300
+2019-09-05 09:46:33.003: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:46:33.022: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:46:33.059: svms.StudentEndToEndTest: 
+### started cleanupDataForStudent() ###
+2019-09-05 09:46:33.059: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+cleanupDataForStudent(): data before cleanup: [Student{studentId=999993, personId=999993, classId=999993, fee=200, status='A', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999993'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:46:29.636', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}]
+2019-09-05 09:46:33.082: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:46:33.101: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+cleanupDataForStudent(): data after cleanup: []
+### ended cleanupDataForStudent() ###
+2019-09-05 09:46:33.118: svms.StudentEndToEndTest: 
+tearDown()
+2019-09-05 09:47:15.244: svms.StudentEndToEndTest: 
+### started createDataForStudent() ###
+2019-09-05 09:47:15.244: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:47:15.631: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:47:15.718: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:47:15.739: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:47:15.761: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+createDataForStudent(): data[Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}]
+### ended createDataForStudent() ###
+2019-09-05 09:47:15.802: svms.StudentEndToEndTest: 
+dataSetup(): 
+2019-09-05 09:47:15.804: svms.StudentEndToEndTest: 
+deleteStudentTest()
+2019-09-05 09:47:15.804: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:47:15.822: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:47:15.844: svms.StudentEndToEndTest: 
+2019-09-05 09:47:15.844: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: 3 actual: 3
+2019-09-05 09:47:15.868: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: [Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}] actual: [Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}]
+2019-09-05 09:47:15.887: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+2019-09-05 09:47:15.909: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+2019-09-05 09:47:15.928: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:47:15.946: svms.StudentEndToEndTest: 
+2019-09-05 09:47:15.946: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+saveStudentTest(): expected: Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}} actual: Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}}
+2019-09-05 09:47:15.968: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:47:15.985: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:47:16.018: svms.StudentEndToEndTest: 
+2019-09-05 09:47:16.019: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:47:16.041: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+2019-09-05 09:47:16.065: svms.StudentEndToEndTest: 
+findAllStudentsTest(): [Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}]
+2019-09-05 09:47:16.065: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:47:16.103: svms.Repository.StudentRepositoryImpl: 
+updateStudentStatus(): query: UPDATE  student SET status = ? WHERE  studentid = ?
+2019-09-05 09:47:16.127: svms.StudentEndToEndTest: 
+2019-09-05 09:47:16.127: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:47:18.2: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:47:18.242: svms.Repository.StudentRepositoryImpl: 
+updateStudentFee(): query: UPDATE  student SET fee = ? WHERE  studentid = ?
+2019-09-05 09:47:18.261: svms.StudentEndToEndTest: 
+2019-09-05 09:47:18.261: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+updateEmployeeStatusTest(): expected: 300 actual: 300
+2019-09-05 09:47:18.283: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:47:18.301: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:47:18.36: svms.StudentEndToEndTest: 
+### started cleanupDataForStudent() ###
+2019-09-05 09:47:18.36: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+cleanupDataForStudent(): data before cleanup: [Student{studentId=999993, personId=999993, classId=999993, fee=200, status='A', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999993'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:47:15.244', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}]
+2019-09-05 09:47:18.378: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:47:18.394: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+cleanupDataForStudent(): data after cleanup: []
+### ended cleanupDataForStudent() ###
+2019-09-05 09:47:18.412: svms.StudentEndToEndTest: 
+tearDown()
+2019-09-05 09:48:04.859: svms.StudentEndToEndTest: 
+### started createDataForStudent() ###
+2019-09-05 09:48:04.859: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:48:05.197: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:48:05.316: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:48:05.34: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:48:05.355: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+createDataForStudent(): data[Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:48:04.859', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:48:04.859', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:48:04.859', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}]
+### ended createDataForStudent() ###
+2019-09-05 09:48:05.406: svms.StudentEndToEndTest: 
+dataSetup(): 
+2019-09-05 09:48:05.409: svms.StudentEndToEndTest: 
+deleteStudentTest()
+2019-09-05 09:48:05.409: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:48:05.428: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:48:05.446: svms.StudentEndToEndTest: 
+2019-09-05 09:48:05.449: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: 3 actual: 3
+2019-09-05 09:48:05.474: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: [Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:48:04.859', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:48:04.859', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:48:04.859', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}] actual: [Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:48:04.859', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:48:04.859', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:48:04.859', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}]
+2019-09-05 09:48:05.493: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+2019-09-05 09:48:05.512: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+2019-09-05 09:48:05.533: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:48:05.551: svms.StudentEndToEndTest: 
+2019-09-05 09:48:05.551: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+saveStudentTest(): expected: Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:48:04.859', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}} actual: Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:48:04.859', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}}
+2019-09-05 09:48:05.577: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:48:05.6: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:48:05.618: svms.StudentEndToEndTest: 
+2019-09-05 09:48:05.619: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:48:05.635: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+2019-09-05 09:48:05.669: svms.StudentEndToEndTest: 
+findAllStudentsTest(): [Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:48:04.859', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:48:04.859', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:48:04.859', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}]
+2019-09-05 09:48:05.669: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:48:05.726: svms.Repository.StudentRepositoryImpl: 
+updateStudentStatus(): query: UPDATE  student SET status = ? WHERE  studentid = ?
+2019-09-05 09:48:05.743: svms.StudentEndToEndTest: 
+2019-09-05 09:48:05.743: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+updateStudentStatusTest(): expected: A actual: A
+2019-09-05 09:48:05.768: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:48:05.79: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:48:05.822: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:48:05.844: svms.Repository.StudentRepositoryImpl: 
+updateStudentFee(): query: UPDATE  student SET fee = ? WHERE  studentid = ?
+2019-09-05 09:48:05.863: svms.StudentEndToEndTest: 
+2019-09-05 09:48:05.863: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+updateEmployeeStatusTest(): expected: 300 actual: 300
+2019-09-05 09:48:05.881: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:48:05.9: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:48:05.917: svms.StudentEndToEndTest: 
+### started cleanupDataForStudent() ###
+2019-09-05 09:48:05.917: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+cleanupDataForStudent(): data before cleanup: [Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:48:04.859', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:48:04.859', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:48:04.859', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}]
+2019-09-05 09:48:05.941: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:48:05.958: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+cleanupDataForStudent(): data after cleanup: []
+### ended cleanupDataForStudent() ###
+2019-09-05 09:48:05.978: svms.StudentEndToEndTest: 
+tearDown()
+2019-09-05 09:49:52.238: svms.StudentEndToEndTest: 
+### started createDataForStudent() ###
+2019-09-05 09:49:52.238: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:49:52.6: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:49:52.682: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:49:52.7: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:49:52.719: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:49:52.738: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+createDataForStudent(): data[Student{studentId=999998, personId=999998, classId=999998, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+### ended createDataForStudent() ###
+2019-09-05 09:49:52.78: svms.StudentEndToEndTest: 
+dataSetup(): 
+2019-09-05 09:49:52.783: svms.StudentEndToEndTest: 
+deleteStudentTest()
+2019-09-05 09:49:52.783: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:49:52.801: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:49:52.822: svms.StudentEndToEndTest: 
+2019-09-05 09:49:52.823: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: 3 actual: 4
+2019-09-05 09:49:52.845: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: [Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}] actual: [Student{studentId=999998, personId=999998, classId=999998, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+2019-09-05 09:49:52.864: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+2019-09-05 09:49:52.884: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:49:52.909: svms.StudentEndToEndTest: 
+2019-09-05 09:49:52.91: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+saveStudentTest(): expected: Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}} actual: Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}}
+2019-09-05 09:49:52.933: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:49:52.955: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:49:52.988: svms.StudentEndToEndTest: 
+2019-09-05 09:49:52.988: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+findStudentByIdTest(): expected: Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}} actual: Student{studentId=999998, personId=999998, classId=999998, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-05 09:49:53.008: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:49:53.031: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+2019-09-05 09:49:53.057: svms.StudentEndToEndTest: 
+findAllStudentsTest(): [Student{studentId=999998, personId=999998, classId=999998, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+2019-09-05 09:49:53.058: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:49:53.081: svms.Repository.StudentRepositoryImpl: 
+updateStudentStatus(): query: UPDATE  student SET status = ? WHERE  studentid = ?
+2019-09-05 09:49:55.186: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:49:55.247: svms.Repository.StudentRepositoryImpl: 
+updateStudentFee(): query: UPDATE  student SET fee = ? WHERE  studentid = ?
+2019-09-05 09:49:55.264: svms.StudentEndToEndTest: 
+2019-09-05 09:49:55.264: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+updateEmployeeStatusTest(): expected: 300 actual: 300
+2019-09-05 09:49:55.282: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:49:55.299: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:49:55.319: svms.StudentEndToEndTest: 
+### started cleanupDataForStudent() ###
+2019-09-05 09:49:55.319: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+cleanupDataForStudent(): data before cleanup: [Student{studentId=999998, personId=999998, classId=999998, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999993, personId=999993, classId=999993, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:49:52.238', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999993'}}]
+2019-09-05 09:49:55.338: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:49:55.375: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+cleanupDataForStudent(): data after cleanup: []
+### ended cleanupDataForStudent() ###
+2019-09-05 09:49:55.392: svms.StudentEndToEndTest: 
+tearDown()
+2019-09-05 09:50:55.725: svms.StudentEndToEndTest: 
+### started createDataForStudent() ###
+2019-09-05 09:50:55.725: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:50:56.084: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:50:56.204: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:50:56.225: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:50:56.243: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:50:56.265: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+createDataForStudent(): data[Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+### ended createDataForStudent() ###
+2019-09-05 09:50:56.309: svms.StudentEndToEndTest: 
+dataSetup(): 
+2019-09-05 09:50:56.31: svms.StudentEndToEndTest: 
+deleteStudentTest()
+2019-09-05 09:50:56.31: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:50:56.331: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:50:56.378: svms.StudentEndToEndTest: 
+2019-09-05 09:50:56.378: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: 3 actual: 3
+2019-09-05 09:50:56.401: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: [Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}] actual: [Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+2019-09-05 09:50:56.418: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+2019-09-05 09:50:56.437: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+2019-09-05 09:50:56.457: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:50:56.481: svms.StudentEndToEndTest: 
+2019-09-05 09:50:56.481: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+saveStudentTest(): expected: Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}} actual: Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}}
+2019-09-05 09:50:56.515: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:50:56.531: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:50:56.55: svms.StudentEndToEndTest: 
+2019-09-05 09:50:56.55: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+findStudentByIdTest(): expected: Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}} actual: Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-05 09:50:56.576: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:50:56.594: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+2019-09-05 09:50:56.615: svms.StudentEndToEndTest: 
+findAllStudentsTest(): [Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+2019-09-05 09:50:56.615: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:50:58.706: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:50:58.74: svms.Repository.StudentRepositoryImpl: 
+updateStudentFee(): query: UPDATE  student SET fee = ? WHERE  studentid = ?
+2019-09-05 09:50:58.775: svms.StudentEndToEndTest: 
+2019-09-05 09:50:58.775: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+updateEmployeeStatusTest(): expected: 300 actual: 300
+2019-09-05 09:50:58.794: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:50:58.81: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:50:58.83: svms.StudentEndToEndTest: 
+### started cleanupDataForStudent() ###
+2019-09-05 09:50:58.83: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+cleanupDataForStudent(): data before cleanup: [Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:50:55.725', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+2019-09-05 09:50:58.847: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:50:58.874: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+cleanupDataForStudent(): data after cleanup: []
+### ended cleanupDataForStudent() ###
+2019-09-05 09:50:58.893: svms.StudentEndToEndTest: 
+tearDown()
+2019-09-05 09:52:50.829: svms.StudentEndToEndTest: 
+### started createDataForStudent() ###
+2019-09-05 09:52:50.829: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:52:51.218: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:52:51.302: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:52:51.32: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:52:51.351: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:52:51.371: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+createDataForStudent(): data[Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+### ended createDataForStudent() ###
+2019-09-05 09:52:51.411: svms.StudentEndToEndTest: 
+dataSetup(): 
+2019-09-05 09:52:51.413: svms.StudentEndToEndTest: 
+deleteStudentTest()
+2019-09-05 09:52:51.413: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:52:51.432: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:52:51.452: svms.StudentEndToEndTest: 
+2019-09-05 09:52:51.453: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: 3 actual: 3
+2019-09-05 09:52:51.475: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: [Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}] actual: [Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+2019-09-05 09:52:51.495: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+2019-09-05 09:52:51.513: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+2019-09-05 09:52:51.535: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:52:51.568: svms.StudentEndToEndTest: 
+2019-09-05 09:52:51.568: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+saveStudentTest(): expected: Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}} actual: Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}}
+2019-09-05 09:52:51.595: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:52:51.613: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:52:51.632: svms.StudentEndToEndTest: 
+2019-09-05 09:52:51.632: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+findStudentByIdTest(): expected: Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}} actual: Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-05 09:52:51.654: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:52:51.671: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+2019-09-05 09:52:51.688: svms.StudentEndToEndTest: 
+findAllStudentsTest(): [Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+2019-09-05 09:52:51.69: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:52:51.714: svms.Repository.StudentRepositoryImpl: 
+updateStudentStatus(): query: UPDATE  student SET status = ? WHERE  studentid = ?
+2019-09-05 09:52:51.739: svms.StudentEndToEndTest: 
+2019-09-05 09:52:51.739: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+updateStudentStatusTest(): expected: A actual: A
+2019-09-05 09:52:51.763: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:52:51.781: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:52:51.8: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:52:51.817: svms.Repository.StudentRepositoryImpl: 
+updateStudentFee(): query: UPDATE  student SET fee = ? WHERE  studentid = ?
+2019-09-05 09:52:51.847: svms.StudentEndToEndTest: 
+2019-09-05 09:52:51.847: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+updateEmployeeStatusTest(): expected: 300 actual: 300
+2019-09-05 09:52:51.865: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:52:51.883: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:52:51.901: svms.StudentEndToEndTest: 
+### started cleanupDataForStudent() ###
+2019-09-05 09:52:51.901: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+cleanupDataForStudent(): data before cleanup: [Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:52:50.829', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+2019-09-05 09:52:51.918: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:52:51.936: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+cleanupDataForStudent(): data after cleanup: []
+### ended cleanupDataForStudent() ###
+2019-09-05 09:52:51.953: svms.StudentEndToEndTest: 
+tearDown()
+2019-09-05 09:55:15.014: svms.StudentEndToEndTest: 
+### started createDataForStudent() ###
+2019-09-05 09:55:15.045: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:55:16.264: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:55:16.357: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:55:16.435: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:55:16.467: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:55:16.545: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+createDataForStudent(): data[Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+### ended createDataForStudent() ###
+2019-09-05 09:55:16.639: svms.StudentEndToEndTest: 
+dataSetup(): 
+2019-09-05 09:55:16.67: svms.StudentEndToEndTest: 
+deleteStudentTest()
+2019-09-05 09:55:16.67: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:55:16.701: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:55:16.936: svms.StudentEndToEndTest: 
+2019-09-05 09:55:16.936: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: 3 actual: 3
+2019-09-05 09:55:16.998: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: [Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}] actual: [Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+2019-09-05 09:55:17.013: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+2019-09-05 09:55:17.029: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+2019-09-05 09:55:17.529: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:55:17.591: svms.StudentEndToEndTest: 
+2019-09-05 09:55:17.591: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+saveStudentTest(): expected: Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}} actual: Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}}
+2019-09-05 09:55:17.623: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:55:17.638: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:55:17.701: svms.StudentEndToEndTest: 
+2019-09-05 09:55:17.701: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+findStudentByIdTest(): expected: Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}} actual: Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-05 09:55:17.716: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:55:17.732: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+2019-09-05 09:55:19.841: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:55:19.888: svms.Repository.StudentRepositoryImpl: 
+updateStudentStatus(): query: UPDATE  student SET status = ? WHERE  studentid = ?
+2019-09-05 09:55:19.919: svms.StudentEndToEndTest: 
+2019-09-05 09:55:19.919: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+updateStudentStatusTest(): expected: A actual: A
+2019-09-05 09:55:19.935: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:55:19.95: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:55:19.966: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:55:19.981: svms.Repository.StudentRepositoryImpl: 
+updateStudentFee(): query: UPDATE  student SET fee = ? WHERE  studentid = ?
+2019-09-05 09:55:19.997: svms.StudentEndToEndTest: 
+2019-09-05 09:55:19.997: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+updateEmployeeStatusTest(): expected: 300 actual: 300
+2019-09-05 09:55:20.013: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:55:20.028: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:55:20.06: svms.StudentEndToEndTest: 
+### started cleanupDataForStudent() ###
+2019-09-05 09:55:20.06: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+cleanupDataForStudent(): data before cleanup: [Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:15.014', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+2019-09-05 09:55:20.075: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:55:20.091: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+cleanupDataForStudent(): data after cleanup: []
+### ended cleanupDataForStudent() ###
+2019-09-05 09:55:20.106: svms.StudentEndToEndTest: 
+tearDown()
+2019-09-05 09:55:55.997: svms.StudentEndToEndTest: 
+### started createDataForStudent() ###
+2019-09-05 09:55:55.997: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:55:56.465: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:55:56.559: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:55:56.575: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:55:56.59: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:55:56.606: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+createDataForStudent(): data[Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+### ended createDataForStudent() ###
+2019-09-05 09:55:56.653: svms.StudentEndToEndTest: 
+dataSetup(): 
+2019-09-05 09:55:56.653: svms.StudentEndToEndTest: 
+deleteStudentTest()
+2019-09-05 09:55:56.653: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:55:56.668: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:55:56.684: svms.StudentEndToEndTest: 
+2019-09-05 09:55:56.684: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: 3 actual: 3
+2019-09-05 09:55:56.715: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+findStudentByStatusTest(): expected: [Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}] actual: [Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+2019-09-05 09:55:56.731: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+2019-09-05 09:55:56.746: svms.Repository.StudentRepositoryImpl: 
+findStudentByStatus(): query: SELECT * FROM  student WHERE status = :status
+2019-09-05 09:55:56.762: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:55:56.809: svms.StudentEndToEndTest: 
+2019-09-05 09:55:56.809: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+saveStudentTest(): expected: Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}} actual: Student{studentId=999991, personId=999991, classId=999991, fee=200, status='I', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999991'}}
+2019-09-05 09:55:56.84: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:55:56.856: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:55:56.871: svms.StudentEndToEndTest: 
+2019-09-05 09:55:56.871: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+findStudentByIdTest(): expected: Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}} actual: Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}
+2019-09-05 09:55:56.887: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:55:56.903: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+2019-09-05 09:55:59.012: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:55:59.058: svms.Repository.StudentRepositoryImpl: 
+updateStudentStatus(): query: UPDATE  student SET status = ? WHERE  studentid = ?
+2019-09-05 09:55:59.074: svms.StudentEndToEndTest: 
+2019-09-05 09:55:59.074: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+updateStudentStatusTest(): expected: A actual: A
+2019-09-05 09:55:59.09: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:55:59.105: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:55:59.136: svms.Repository.StudentRepositoryImpl: 
+saveStudent(): query: INSERT INTO  student VALUES(?,?,?,?,?,?,?,?,?)
+2019-09-05 09:55:59.152: svms.Repository.StudentRepositoryImpl: 
+updateStudentFee(): query: UPDATE  student SET fee = ? WHERE  studentid = ?
+2019-09-05 09:55:59.168: svms.StudentEndToEndTest: 
+2019-09-05 09:55:59.168: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+updateEmployeeStatusTest(): expected: 300 actual: 300
+2019-09-05 09:55:59.183: svms.Repository.StudentRepositoryImpl: 
+findStudentById(): query: SELECT * FROM  student WHERE  studentid = :studentid
+2019-09-05 09:55:59.199: svms.Repository.StudentRepositoryImpl: 
+deleteStudent(): query: DELETE FROM  student WHERE  studentid = ?
+2019-09-05 09:55:59.215: svms.StudentEndToEndTest: 
+### started cleanupDataForStudent() ###
+2019-09-05 09:55:59.215: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+cleanupDataForStudent(): data before cleanup: [Student{studentId=999995, personId=999995, classId=999995, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999995'}}, Student{studentId=999998, personId=999998, classId=999998, fee=500, status='I', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999998'}}, Student{studentId=999997, personId=999997, classId=999997, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999997'}}, Student{studentId=999996, personId=999996, classId=999996, fee=500, status='A', dBLog=DBLog{timestamp='2019-09-05 09:55:55.997', application='svms-1.0v', machineName='LAPTOP-D1GI58VA', userId='999996'}}]
+2019-09-05 09:55:59.23: svms.Repository.StudentRepositoryImpl: 
+cleanUp(): query: DELETE FROM  student
+2019-09-05 09:55:59.261: svms.Repository.StudentRepositoryImpl: 
+findAllStudents(): query: SELECT * FROM  student
+cleanupDataForStudent(): data after cleanup: []
+### ended cleanupDataForStudent() ###
+2019-09-05 09:55:59.277: svms.StudentEndToEndTest: 
+tearDown()

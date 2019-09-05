@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9ae5cda-65da-459f-9cc6-1b499db4d0fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sql/create_employee.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Entity/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/EmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/EmployeeRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/EmployeeRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/EmployeeStatements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/svms/EmployeeEndToEndTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/create_student.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/StudentRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/StudentStatements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/StudentRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/svms/StudentEndToEndTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log.out" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/svms/AddressEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/AddressEndToEndTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/svms/LoginUserEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/LoginUserEndToEndTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/svms/PersonEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/PersonEndToEndTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/svms/EmployeeEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/EmployeeEndToEndTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/testApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testApplicationContext.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,6 +47,9 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="svms" />
+      <recent name="svms.Repository" />
+      <recent name="svms.Repository.Statements" />
+      <recent name="svms.Repository.RowMapper" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="A:\workspace\svms\src\test\resources" />
@@ -150,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567526863028</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added entity Employee">
+      <created>1567533029623</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1567533029623</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,7 +177,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added entity Address and Modified entity LoginUser" />
     <MESSAGE value="added entity Person" />
-    <option name="LAST_COMMIT_MESSAGE" value="added entity Person" />
+    <MESSAGE value="added entity Employee" />
+    <option name="LAST_COMMIT_MESSAGE" value="added entity Employee" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
