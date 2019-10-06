@@ -23,7 +23,7 @@ public class Address {
         this.state = builder.state;
         this.pincode = builder.pincode;
         this.status = builder.status;
-        this.dBLog = builder.dbLog;
+        this.dBLog = builder.dBLog;
     }
 
     public Long getAddressId() {
@@ -92,7 +92,7 @@ public class Address {
         private String state;
         private Long pincode;
         private String status;
-        private DBLog dbLog;
+        private DBLog dBLog;
 
         public Builder addressId(Long addressId){
             this.addressId = addressId;
@@ -139,8 +139,8 @@ public class Address {
             return this;
         }
 
-        public Builder dbLog(DBLog dbLog){
-            this.dbLog = dbLog;
+        public Builder dBLog(DBLog dBLog){
+            this.dBLog = dBLog;
             return this;
         }
 

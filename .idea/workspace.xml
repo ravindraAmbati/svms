@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9ae5cda-65da-459f-9cc6-1b499db4d0fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sql/create_student.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Entity/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/StudentRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/StudentStatements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/StudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/StudentRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/svms/StudentEndToEndTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/create_class.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Entity/Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/ClassRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/ClassRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/ClassRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/ClassStatements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log.out" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/svms/EmployeeEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/EmployeeEndToEndTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/Entity/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/AddressRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/AddressRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/AddressRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/AddressRowMapper.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,18 +40,20 @@
   <component name="ProjectId" id="1QBgmNAoyrJNZlliEEQcHcWTs0g" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sql" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.inlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="svms" />
       <recent name="svms.Repository" />
       <recent name="svms.Repository.Statements" />
       <recent name="svms.Repository.RowMapper" />
+      <recent name="svms" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="A:\workspace\git\svms\sql" />
       <recent name="A:\workspace\svms\src\test\resources" />
       <recent name="A:\workspace\svms" />
     </key>
@@ -158,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567533029623</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added entity Student">
+      <created>1567657691561</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1567657691577</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,7 +187,8 @@
     <MESSAGE value="added entity Address and Modified entity LoginUser" />
     <MESSAGE value="added entity Person" />
     <MESSAGE value="added entity Employee" />
-    <option name="LAST_COMMIT_MESSAGE" value="added entity Employee" />
+    <MESSAGE value="added entity Student" />
+    <option name="LAST_COMMIT_MESSAGE" value="added entity Student" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
