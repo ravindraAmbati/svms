@@ -6,7 +6,6 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import svms.Entity.Address;
 import svms.Repository.RowMapper.AddressRowMapper;
 import svms.Repository.Statements.AddressStatements;
-import svms.Repository.Statements.LoginUserStatements;
 import svms.Utility;
 
 import java.util.HashMap;
@@ -83,7 +82,7 @@ public class AddressRepositoryImpl implements AddressRepository {
     @Override
     public int deleteAddress(Long id) {
         logger.info(Utility.getCurrrentTimeStamp() + ": " + AddressRepositoryImpl.class.getName() + ": ");
-        logger.info("deleteAddress(): query: " + AddressStatements.SAVE + " and id: " + id);
+        logger.info("deleteAddress(): query: " + AddressStatements.DELETE + " and id: " + id);
         return jdbcTemplate.update(AddressStatements.DELETE, id);
     }
 

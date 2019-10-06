@@ -26,7 +26,7 @@ public class AddressRowMapper implements RowMapper<Address> {
                 .state(rs.getString("state"))
                 .pincode(rs.getLong("pincode"))
                 .status(rs.getString("status"))
-                .dbLog(dbLog)
+                .dBLog(dbLog)
                 .build();
         return address;
     }
