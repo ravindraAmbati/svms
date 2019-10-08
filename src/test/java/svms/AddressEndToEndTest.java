@@ -10,7 +10,7 @@ import svms.Repository.AddressRepository;
 
 import java.util.Arrays;
 import java.util.List;
-@Ignore
+
 public class AddressEndToEndTest {
 
     private static Logger logger = Logger.getLogger(AddressEndToEndTest.class);

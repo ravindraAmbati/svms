@@ -11,7 +11,7 @@ import svms.Repository.StudentRepository;
 import java.util.Arrays;
 import java.util.List;
 
-@Ignore
+
 public class StudentEndToEndTest {
 
     private static Logger logger = Logger.getLogger(StudentEndToEndTest.class);

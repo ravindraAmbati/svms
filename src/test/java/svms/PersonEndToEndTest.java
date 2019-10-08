@@ -11,7 +11,7 @@ import svms.Repository.PersonRepository;
 import java.util.Arrays;
 import java.util.List;
 
-@Ignore
+
 public class PersonEndToEndTest {
 
     private static Logger logger = Logger.getLogger(PersonEndToEndTest.class);

@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9ae5cda-65da-459f-9cc6-1b499db4d0fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/create_class.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Entity/Class.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/ClassRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/ClassRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/ClassRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/ClassStatements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log.out" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/svms/Entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/Entity/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/AddressRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/AddressRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/AddressRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/AddressRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/svms/AddressEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/AddressEndToEndTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/svms/EmployeeEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/EmployeeEndToEndTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/svms/LoginUserEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/LoginUserEndToEndTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/svms/PersonEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/PersonEndToEndTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/svms/StudentEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/StudentEndToEndTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testApplicationContext.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
