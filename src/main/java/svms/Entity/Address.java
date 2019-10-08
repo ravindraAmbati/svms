@@ -11,7 +11,7 @@ public class Address {
     private String state;
     private Long pincode;
     private String status;
-    private DBLog dBLog;
+    private DBLog dbLog;
 
     private Address(Builder builder){
         this.addressId = builder.addressId;
@@ -23,7 +23,7 @@ public class Address {
         this.state = builder.state;
         this.pincode = builder.pincode;
         this.status = builder.status;
-        this.dBLog = builder.dBLog;
+        this.dbLog = builder.dBLog;
     }
 
     public Long getAddressId() {
@@ -63,7 +63,7 @@ public class Address {
     }
 
     public DBLog getDBLog() {
-        return dBLog;
+        return dbLog;
     }
 
     @Override
@@ -78,7 +78,7 @@ public class Address {
                 ", state='" + state + '\'' +
                 ", pincode=" + pincode +
                 ", status='" + status + '\'' +
-                ", dBLog=" + dBLog +
+                ", dBLog=" + dbLog +
                 '}';
     }
 
@@ -139,7 +139,7 @@ public class Address {
             return this;
         }
 
-        public Builder dBLog(DBLog dBLog){
+        public Builder dbLog(DBLog dBLog){
             this.dBLog = dBLog;
             return this;
         }

@@ -11,7 +11,7 @@ import svms.Repository.LoginUserRepository;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-@Ignore
+
 public class LoginUserEndToEndTest {
 
     private static Logger logger = Logger.getLogger(LoginUserEndToEndTest.class);
