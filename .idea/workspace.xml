@@ -1,49 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9ae5cda-65da-459f-9cc6-1b499db4d0fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log.out" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/create_loginuser.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/create_loginuser.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/entity/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Entity/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/entity/Class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Entity/DBLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/entity/DBLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Entity/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/entity/LoginUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/entity/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/AddressRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/AddressRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/AddressRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/implementation/AddressRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/ClassRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/ClassRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/ClassRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/implementation/ClassRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/EmployeeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/EmployeeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/implementation/EmployeeRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/LoginUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/LoginUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/LoginUserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/implementation/LoginUserRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/PersonRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/PersonRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/implementation/PersonRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/AddressRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/rowmapper/AddressRowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/ClassRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/rowmapper/ClassRowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/EmployeeRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/rowmapper/EmployeeRowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/LoginUserRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/rowmapper/LoginUserRowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/PersonRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/rowmapper/PersonRowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/StudentRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/rowmapper/StudentRowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/AddressStatements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/statements/AddressStatements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/ClassStatements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/statements/ClassStatements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/EmployeeStatements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/statements/EmployeeStatements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/LoginUserStatements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/statements/LoginUserStatements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/PersonStatements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/statements/PersonStatements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/StudentStatements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/statements/StudentStatements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/StudentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/implementation/StudentRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/svms/AddressEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/AddressEndToEndTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/svms/EmployeeEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/EmployeeEndToEndTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/svms/LoginUserEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/LoginUserEndToEndTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/svms/PersonEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/PersonEndToEndTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/svms/StudentEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/StudentEndToEndTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testApplicationContext.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b9ae5cda-65da-459f-9cc6-1b499db4d0fd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
