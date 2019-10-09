@@ -1,12 +1,15 @@
 package svms;
 
 import org.apache.log4j.Logger;
-import org.junit.*;
+import org.junit.AfterClass;
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import svms.Entity.DBLog;
-import svms.Entity.Student;
-import svms.Repository.StudentRepository;
+import svms.entity.DBLog;
+import svms.entity.Student;
+import svms.repository.StudentRepository;
 
 import java.util.Arrays;
 import java.util.List;
@@ -26,15 +29,13 @@ public class StudentEndToEndTest {
         studentRepository = (StudentRepository) context.getBean("studentRepo");
         currentTimeStamp = Utility.getCurrrentTimeStamp();
         createDataForStudent();
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + StudentEndToEndTest.class.getName() + ": ");
-        logger.info("dataSetup(): ");
+        logger.info(getLoggerInfo() + "dataSetup(): ");
     }
 
     @Test
     public void findAllStudentsTest() {
         List<Student> students = studentRepository.findAllStudents();
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + StudentEndToEndTest.class.getName() + ": ");
-        logger.info("findAllStudentsTest(): " + students);
+        logger.info(getLoggerInfo() + "findAllStudentsTest(): " + students);
         Assert.assertEquals(4, students.size());
     }
 
@@ -42,8 +43,7 @@ public class StudentEndToEndTest {
     public void findStudentByIdTest() {
         DBLog dBLog = new DBLog.Builder().timestamp(currentTimeStamp).application(Utility.getApplication()).machineName(Utility.getHostName()).userId(String.valueOf(999998)).build();
         Student student = new Student.Builder().studentId(999998L).personId(999998L).classId(999998L).fee(500L).status("I").dBLog(dBLog).build();
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + StudentEndToEndTest.class.getName() + ": ");
-        logger.info("findStudentByIdTest(): expected: " + student.toString() + " actual: " + studentRepository.findStudentById(999998L).toString());
+        logger.info(getLoggerInfo() + "findStudentByIdTest(): expected: " + student.toString() + " actual: " + studentRepository.findStudentById(999998L).toString());
         Assert.assertEquals(student.toString(), studentRepository.findStudentById(999998L).toString());
     }
 
@@ -55,10 +55,9 @@ public class StudentEndToEndTest {
         Student student6 = new Student.Builder().studentId(999996L).personId(999996L).classId(999996L).fee(500L).status("A").dBLog(dBLog).build();
         dBLog = new DBLog.Builder().timestamp(currentTimeStamp).application(Utility.getApplication()).machineName(Utility.getHostName()).userId(String.valueOf(999995)).build();
         Student student5 = new Student.Builder().studentId(999995L).personId(999995L).classId(999995L).fee(500L).status("A").dBLog(dBLog).build();
-        List<Student> activeStudents = Arrays.asList(student5, student6, student7);
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + StudentEndToEndTest.class.getName() + ": ");
-        logger.info("findStudentByStatusTest(): expected: 3" + " actual: " + studentRepository.findStudentByStatus("A").size());
-        logger.info("findStudentByStatusTest(): expected: " + activeStudents.toString() + " actual: " + studentRepository.findStudentByStatus("A").toString());
+        List<Student> activeStudents = Arrays.asList(student7, student6, student5);
+        logger.info(getLoggerInfo() + "findStudentByStatusTest(): expected: 3" + " actual: " + studentRepository.findStudentByStatus("A").size());
+        logger.info(getLoggerInfo() + "findStudentByStatusTest(): expected: " + activeStudents.toString() + " actual: " + studentRepository.findStudentByStatus("A").toString());
         Assert.assertEquals(3, studentRepository.findStudentByStatus("A").size());
         Assert.assertEquals(activeStudents.toString(), studentRepository.findStudentByStatus("A").toString());
     }
@@ -68,8 +67,7 @@ public class StudentEndToEndTest {
         DBLog dBLog = new DBLog.Builder().timestamp(currentTimeStamp).application(Utility.getApplication()).machineName(Utility.getHostName()).userId(String.valueOf(999991)).build();
         Student student = new Student.Builder().studentId(999991L).personId(999991L).classId(999991L).fee(200L).status("I").dBLog(dBLog).build();
         Assert.assertEquals(1, studentRepository.saveStudent(student));
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + StudentEndToEndTest.class.getName() + ": ");
-        logger.info("saveStudentTest(): expected: " + student.toString() + " actual: " + studentRepository.findStudentById(999991L).toString());
+        logger.info(getLoggerInfo() + "saveStudentTest(): expected: " + student.toString() + " actual: " + studentRepository.findStudentById(999991L).toString());
         Assert.assertEquals(student.toString(), studentRepository.findStudentById(999991L).toString());
         Assert.assertEquals(1, studentRepository.deleteStudent(999991L));
     }
@@ -78,8 +76,7 @@ public class StudentEndToEndTest {
     public void deleteStudentTest() {
         DBLog dBLog = new DBLog.Builder().timestamp(currentTimeStamp).application(Utility.getApplication()).machineName(Utility.getHostName()).userId(String.valueOf(999990)).build();
         Student student = new Student.Builder().studentId(999990L).personId(999990L).classId(999990L).fee(200L).status("I").dBLog(dBLog).build();
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + StudentEndToEndTest.class.getName() + ": ");
-        logger.info("deleteStudentTest()");
+        logger.info(getLoggerInfo() + "deleteStudentTest()");
         Assert.assertEquals(1, studentRepository.saveStudent(student));
         Assert.assertEquals(1, studentRepository.deleteStudent(999990L));
     }
@@ -91,8 +88,7 @@ public class StudentEndToEndTest {
         Assert.assertEquals(1, studentRepository.saveStudent(student));
         String expectedStatus = "A";
         studentRepository.updateStudentStatus(999993L, expectedStatus);
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + StudentEndToEndTest.class.getName() + ": ");
-        logger.info("updateStudentStatusTest(): expected: " + expectedStatus + " actual: " + studentRepository.findStudentById(999993L).getStatus());
+        logger.info(getLoggerInfo() + "updateStudentStatusTest(): expected: " + expectedStatus + " actual: " + studentRepository.findStudentById(999993L).getStatus());
         Assert.assertEquals(expectedStatus, studentRepository.findStudentById(999993L).getStatus());
         Assert.assertEquals(1, studentRepository.deleteStudent(999993L));
     }
@@ -104,8 +100,7 @@ public class StudentEndToEndTest {
         Assert.assertEquals(1, studentRepository.saveStudent(student));
         Long expectedFee = 300L;
         studentRepository.updateStudentFee(999992L, expectedFee);
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + StudentEndToEndTest.class.getName() + ": ");
-        logger.info("updateEmployeeStatusTest(): expected: " + expectedFee + " actual: " + studentRepository.findStudentById(999992L).getFee());
+        logger.info(getLoggerInfo() + "updateEmployeeStatusTest(): expected: " + expectedFee + " actual: " + studentRepository.findStudentById(999992L).getFee());
         Assert.assertEquals(expectedFee, studentRepository.findStudentById(999992L).getFee());
         Assert.assertEquals(1, studentRepository.deleteStudent(999992L));
     }
@@ -114,13 +109,11 @@ public class StudentEndToEndTest {
     public static void tearDown() {
         cleanupDataForStudent();
         studentRepository = null;
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + StudentEndToEndTest.class.getName() + ": ");
-        logger.info("tearDown()");
+        logger.info(getLoggerInfo() + "tearDown()");
     }
 
     private static void createDataForStudent() {
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + StudentEndToEndTest.class.getName() + ": ");
-        logger.info("### started createDataForStudent() ###");
+        logger.info(getLoggerInfo() + "### started createDataForStudent() ###");
         studentRepository.cleanUp();
         DBLog dBLog = new DBLog.Builder().timestamp(currentTimeStamp).application(Utility.getApplication()).machineName(Utility.getHostName()).userId(String.valueOf(999998)).build();
         Student student = new Student.Builder().studentId(999998L).personId(999998L).classId(999998L).fee(500L).status("I").dBLog(dBLog).build();
@@ -134,18 +127,21 @@ public class StudentEndToEndTest {
         dBLog = new DBLog.Builder().timestamp(currentTimeStamp).application(Utility.getApplication()).machineName(Utility.getHostName()).userId(String.valueOf(999995)).build();
         student = new Student.Builder().studentId(999995L).personId(999995L).classId(999995L).fee(500L).status("A").dBLog(dBLog).build();
         Assert.assertEquals(1, studentRepository.saveStudent(student));
-        logger.info("createDataForStudent(): data" + studentRepository.findAllStudents());
-        logger.info("### ended createDataForStudent() ###");
+        logger.info(getLoggerInfo() + "createDataForStudent(): data" + studentRepository.findAllStudents());
+        logger.info(getLoggerInfo() + "### ended createDataForStudent() ###");
     }
 
     private static void cleanupDataForStudent() {
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + StudentEndToEndTest.class.getName() + ": ");
-        logger.info("### started cleanupDataForStudent() ###");
-        logger.info("cleanupDataForStudent(): data before cleanup: " + studentRepository.findAllStudents());
+        logger.info(getLoggerInfo() + "### started cleanupDataForStudent() ###");
+        logger.info(getLoggerInfo() + "cleanupDataForStudent(): data before cleanup: " + studentRepository.findAllStudents());
         studentRepository.cleanUp();
-        logger.info("cleanupDataForStudent(): data after cleanup: " + studentRepository.findAllStudents());
-        logger.info("### ended cleanupDataForStudent() ###");
+        logger.info(getLoggerInfo() + "cleanupDataForStudent(): data after cleanup: " + studentRepository.findAllStudents());
+        logger.info(getLoggerInfo() + "### ended cleanupDataForStudent() ###");
 
+    }
+
+    private static String getLoggerInfo() {
+        return Utility.getCurrrentTimeStamp() + ": " + StudentEndToEndTest.class.getName() + ": ";
     }
 }
 

@@ -2,12 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9ae5cda-65da-459f-9cc6-1b499db4d0fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/log.out" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/Entity/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/AddressRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/AddressRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/create_loginuser.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/create_loginuser.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/entity/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Entity/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/entity/Class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Entity/DBLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/entity/DBLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Entity/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/entity/LoginUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/AddressRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/AddressRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/AddressRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/implementation/AddressRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/ClassRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/ClassRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/ClassRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/implementation/ClassRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/EmployeeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/implementation/EmployeeRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/LoginUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/LoginUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/LoginUserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/implementation/LoginUserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/PersonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/PersonRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/implementation/PersonRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/AddressRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/rowmapper/AddressRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/ClassRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/rowmapper/ClassRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/EmployeeRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/rowmapper/EmployeeRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/LoginUserRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/rowmapper/LoginUserRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/PersonRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/rowmapper/PersonRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/RowMapper/StudentRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/rowmapper/StudentRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/AddressStatements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/statements/AddressStatements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/ClassStatements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/statements/ClassStatements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/EmployeeStatements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/statements/EmployeeStatements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/LoginUserStatements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/statements/LoginUserStatements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/PersonStatements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/statements/PersonStatements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/Statements/StudentStatements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/statements/StudentStatements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/svms/Repository/StudentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/svms/repository/implementation/StudentRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/svms/AddressEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/AddressEndToEndTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/svms/EmployeeEndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/svms/EmployeeEndToEndTest.java" afterDir="false" />
@@ -27,6 +55,18 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -42,11 +82,15 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/svms/Repository" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sql" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.inlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="svms.Repository.implementation" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="svms.Repository" />
       <recent name="svms.Repository.Statements" />
@@ -71,41 +115,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AddressEndToEndTest.findAddressByIdTest">
-    <configuration name="LoginUserServiceMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="svms.LoginUserServiceMain" />
-      <module name="svms.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="svms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginUserEndToEndTest.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;svms.LoginUserEndToEndTest.test&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="AddressEndToEndTest.findAddressByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StudentEndToEndTest">
+    <configuration name="AddressEndToEndTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="svms.test" />
       <extension name="coverage">
         <pattern>
@@ -115,17 +126,79 @@
       </extension>
       <option name="PACKAGE_NAME" value="svms" />
       <option name="MAIN_CLASS_NAME" value="svms.AddressEndToEndTest" />
-      <option name="METHOD_NAME" value="findAddressByIdTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeEndToEndTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="svms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="svms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="svms" />
+      <option name="MAIN_CLASS_NAME" value="svms.EmployeeEndToEndTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonEndToEndTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="svms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="svms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="svms" />
+      <option name="MAIN_CLASS_NAME" value="svms.PersonEndToEndTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonEndToEndTest.findPersonByStatusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="svms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="svms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="svms" />
+      <option name="MAIN_CLASS_NAME" value="svms.PersonEndToEndTest" />
+      <option name="METHOD_NAME" value="findPersonByStatusTest" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentEndToEndTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="svms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="svms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="svms" />
+      <option name="MAIN_CLASS_NAME" value="svms.StudentEndToEndTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AddressEndToEndTest.findAddressByIdTest" />
-        <item itemvalue="Gradle.LoginUserEndToEndTest.test" />
-        <item itemvalue="Application.LoginUserServiceMain" />
+        <item itemvalue="JUnit.StudentEndToEndTest" />
+        <item itemvalue="JUnit.PersonEndToEndTest" />
+        <item itemvalue="JUnit.PersonEndToEndTest.findPersonByStatusTest" />
+        <item itemvalue="JUnit.AddressEndToEndTest" />
+        <item itemvalue="JUnit.EmployeeEndToEndTest" />
       </list>
     </recent_temporary>
   </component>
@@ -190,16 +263,5 @@
     <MESSAGE value="added entity Employee" />
     <MESSAGE value="added entity Student" />
     <option name="LAST_COMMIT_MESSAGE" value="added entity Student" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/svms/LoginUserEndToEndTest.java</url>
-          <line>118</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
