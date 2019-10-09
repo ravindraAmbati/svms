@@ -19,27 +19,27 @@
         <constructor-arg ref="ds"></constructor-arg>
     </bean>
 
-    <bean id="loginUserRepo" class="svms.Repository.LoginUserRepositoryImpl">
+    <bean id="loginUserRepo" class="svms.repository.implementation.LoginUserRepositoryImpl">
         <property name="jdbcTemplate" ref="jt"/>
         <property name="namedParameterJdbcTemplate" ref="njt"/>
     </bean>
 
-    <bean id="addressRepo" class="svms.Repository.AddressRepositoryImpl">
+    <bean id="addressRepo" class="svms.repository.implementation.AddressRepositoryImpl">
         <property name="jdbcTemplate" ref="jt"/>
         <property name="namedParameterJdbcTemplate" ref="njt"/>
     </bean>
 
-    <bean id="personRepo" class="svms.Repository.PersonRepositoryImpl">
+    <bean id="personRepo" class="svms.repository.implementation.PersonRepositoryImpl">
         <property name="jdbcTemplate" ref="jt"/>
         <property name="namedParameterJdbcTemplate" ref="njt"/>
     </bean>
 
-    <bean id="employeeRepo" class="svms.Repository.EmployeeRepositoryImpl">
+    <bean id="employeeRepo" class="svms.repository.implementation.EmployeeRepositoryImpl">
         <property name="jdbcTemplate" ref="jt"/>
         <property name="namedParameterJdbcTemplate" ref="njt"/>
     </bean>
 
-    <bean id="studentRepo" class="svms.Repository.StudentRepositoryImpl">
+    <bean id="studentRepo" class="svms.repository.implementation.StudentRepositoryImpl">
         <property name="jdbcTemplate" ref="jt"/>
         <property name="namedParameterJdbcTemplate" ref="njt"/>
     </bean>

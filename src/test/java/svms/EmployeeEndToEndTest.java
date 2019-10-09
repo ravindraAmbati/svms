@@ -1,12 +1,15 @@
 package svms;
 
 import org.apache.log4j.Logger;
-import org.junit.*;
+import org.junit.AfterClass;
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import svms.Entity.DBLog;
-import svms.Entity.Employee;
-import svms.Repository.EmployeeRepository;
+import svms.entity.DBLog;
+import svms.entity.Employee;
+import svms.repository.EmployeeRepository;
 
 import java.util.Arrays;
 import java.util.List;
@@ -25,15 +28,13 @@ public class EmployeeEndToEndTest {
         employeeRepository = (EmployeeRepository) context.getBean("employeeRepo");
         currentTimeStamp = Utility.getCurrrentTimeStamp();
         createDataForEmployee();
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + EmployeeEndToEndTest.class.getName() + ": ");
-        logger.info("dataSetup(): ");
+        logger.info(getLoggerInfo() + "dataSetup(): ");
     }
 
     @Test
     public void findAllEmployeesTest() {
         List<Employee> employees = employeeRepository.findAllEmployees();
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + EmployeeEndToEndTest.class.getName() + ": ");
-        logger.info("findAllEmployeesTest(): " + employees);
+        logger.info(getLoggerInfo() + "findAllEmployeesTest(): " + employees);
         Assert.assertEquals(6, employees.size());
     }
 
@@ -41,8 +42,8 @@ public class EmployeeEndToEndTest {
     public void findEmployeeByIdTest() {
         DBLog dBLog = new DBLog.Builder().timestamp(currentTimeStamp).application(Utility.getApplication()).machineName(Utility.getHostName()).userId(String.valueOf(999998)).build();
         Employee employee = new Employee.Builder().employeeId(999998L).personId(999998L).classId(999998L).role("teacher").salary(25000L).status("I").dBLog(dBLog).build();
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + EmployeeEndToEndTest.class.getName() + ": ");
-        logger.info("findEmployeeByIdTest(): expected: " + employee.toString() + " actual: " + employeeRepository.findEmployeeById(999998L).toString());
+        Assert.assertEquals(1, employeeRepository.saveEmployee(employee));
+        logger.info(getLoggerInfo() + "findEmployeeByIdTest(): expected: " + employee.toString() + " actual: " + employeeRepository.findEmployeeById(999998L).toString());
         Assert.assertEquals(employee.toString(), employeeRepository.findEmployeeById(999998L).toString());
     }
 
@@ -55,9 +56,8 @@ public class EmployeeEndToEndTest {
         dBLog = new DBLog.Builder().timestamp(currentTimeStamp).application(Utility.getApplication()).machineName(Utility.getHostName()).userId(String.valueOf(999995)).build();
         Employee employee5 = new Employee.Builder().employeeId(999995L).personId(999995L).classId(999995L).role("teacher").salary(25000L).status("A").dBLog(dBLog).build();
         List<Employee> activeEmployees = Arrays.asList(employee7, employee6, employee5);
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + EmployeeEndToEndTest.class.getName() + ": ");
-        logger.info("findEmployeeByStatusTest(): expected: 3" + " actual: " + employeeRepository.findEmployeeByStatus("I").size());
-        logger.info("findEmployeeByStatusTest(): expected: " + activeEmployees.toString() + " actual: " + employeeRepository.findEmployeeByStatus("A").toString());
+        logger.info(getLoggerInfo() + "findEmployeeByStatusTest(): expected: 3" + " actual: " + employeeRepository.findEmployeeByStatus("I").size());
+        logger.info(getLoggerInfo() + "findEmployeeByStatusTest(): expected: " + activeEmployees.toString() + " actual: " + employeeRepository.findEmployeeByStatus("A").toString());
         Assert.assertEquals(3, employeeRepository.findEmployeeByStatus("I").size());
         Assert.assertEquals(activeEmployees.toString(), employeeRepository.findEmployeeByStatus("A").toString());
     }
@@ -71,9 +71,8 @@ public class EmployeeEndToEndTest {
         dBLog = new DBLog.Builder().timestamp(currentTimeStamp).application(Utility.getApplication()).machineName(Utility.getHostName()).userId(String.valueOf(999992)).build();
         Employee employee2 = new Employee.Builder().employeeId(999992L).personId(999992L).classId(999992L).role("incharge").salary(25000L).status("I").dBLog(dBLog).build();
         List<Employee> activeEmployees = Arrays.asList(employee4, employee3, employee2);
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + EmployeeEndToEndTest.class.getName() + ": ");
-        logger.info("findEmployeeByRoleTest(): expected: 3" + " actual: " + employeeRepository.findEmployeeByRole("incharge").size());
-        logger.info("findEmployeeByRoleTest(): expected: " + activeEmployees.toString() + " actual: " + employeeRepository.findEmployeeByRole("incharge").toString());
+        logger.info(getLoggerInfo() + "findEmployeeByRoleTest(): expected: 3" + " actual: " + employeeRepository.findEmployeeByRole("incharge").size());
+        logger.info(getLoggerInfo() + "findEmployeeByRoleTest(): expected: " + activeEmployees.toString() + " actual: " + employeeRepository.findEmployeeByRole("incharge").toString());
         Assert.assertEquals(3, employeeRepository.findEmployeeByRole("incharge").size());
         Assert.assertEquals(activeEmployees.toString(), employeeRepository.findEmployeeByRole("incharge").toString());
     }
@@ -83,8 +82,7 @@ public class EmployeeEndToEndTest {
         DBLog dBLog = new DBLog.Builder().timestamp(currentTimeStamp).application(Utility.getApplication()).machineName(Utility.getHostName()).userId(String.valueOf(999991)).build();
         Employee employee = new Employee.Builder().employeeId(999991L).personId(999991L).classId(999991L).role("incharge").salary(25000L).status("I").dBLog(dBLog).build();
         Assert.assertEquals(1, employeeRepository.saveEmployee(employee));
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + EmployeeEndToEndTest.class.getName() + ": ");
-        logger.info("saveEmployeeTest(): expected: " + employee.toString() + " actual: " + employeeRepository.findEmployeeById(999991L).toString());
+        logger.info(getLoggerInfo() + "saveEmployeeTest(): expected: " + employee.toString() + " actual: " + employeeRepository.findEmployeeById(999991L).toString());
         Assert.assertEquals(employee.toString(), employeeRepository.findEmployeeById(999991L).toString());
         Assert.assertEquals(1, employeeRepository.deleteEmployee(999991L));
     }
@@ -93,8 +91,7 @@ public class EmployeeEndToEndTest {
     public void deleteEmployeeTest() {
         DBLog dBLog = new DBLog.Builder().timestamp(currentTimeStamp).application(Utility.getApplication()).machineName(Utility.getHostName()).userId(String.valueOf(999990)).build();
         Employee employee = new Employee.Builder().employeeId(999990L).personId(999990L).classId(999990L).role("incharge").salary(25000L).status("I").dBLog(dBLog).build();
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + EmployeeEndToEndTest.class.getName() + ": ");
-        logger.info("deleteEmployeeTest()");
+        logger.info(getLoggerInfo() + "deleteEmployeeTest()");
         Assert.assertEquals(1, employeeRepository.saveEmployee(employee));
         Assert.assertEquals(1, employeeRepository.deleteEmployee(999990L));
     }
@@ -106,8 +103,7 @@ public class EmployeeEndToEndTest {
         Assert.assertEquals(1, employeeRepository.saveEmployee(employee));
         String expectedStatus = "A";
         employeeRepository.updateEmployeeStatus(999989L, expectedStatus);
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + EmployeeEndToEndTest.class.getName() + ": ");
-        logger.info("updateEmployeeStatusTest(): expected: " + expectedStatus + " actual: " + employeeRepository.findEmployeeById(999989L).getStatus());
+        logger.info(getLoggerInfo() + "updateEmployeeStatusTest(): expected: " + expectedStatus + " actual: " + employeeRepository.findEmployeeById(999989L).getStatus());
         Assert.assertEquals(expectedStatus, employeeRepository.findEmployeeById(999989L).getStatus());
         Assert.assertEquals(1, employeeRepository.deleteEmployee(999989L));
     }
@@ -119,8 +115,7 @@ public class EmployeeEndToEndTest {
         Assert.assertEquals(1, employeeRepository.saveEmployee(employee));
         String expectedRole = "Vice Principal";
         employeeRepository.updateEmployeeRole(999988L, expectedRole);
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + EmployeeEndToEndTest.class.getName() + ": ");
-        logger.info("updateEmployeeStatusTest(): expected: " + expectedRole + " actual: " + employeeRepository.findEmployeeById(999988L).getRole());
+        logger.info(getLoggerInfo() + "updateEmployeeStatusTest(): expected: " + expectedRole + " actual: " + employeeRepository.findEmployeeById(999988L).getRole());
         Assert.assertEquals(expectedRole, employeeRepository.findEmployeeById(999988L).getRole());
         Assert.assertEquals(1, employeeRepository.deleteEmployee(999988L));
     }
@@ -132,8 +127,7 @@ public class EmployeeEndToEndTest {
         Assert.assertEquals(1, employeeRepository.saveEmployee(employee));
         Long expectedSalary = 30000L;
         employeeRepository.updateEmployeeSalary(999987L, expectedSalary);
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + EmployeeEndToEndTest.class.getName() + ": ");
-        logger.info("updateEmployeeStatusTest(): expected: " + expectedSalary + " actual: " + employeeRepository.findEmployeeById(999987L).getSalary());
+        logger.info(getLoggerInfo() + "updateEmployeeStatusTest(): expected: " + expectedSalary + " actual: " + employeeRepository.findEmployeeById(999987L).getSalary());
         Assert.assertEquals(expectedSalary, employeeRepository.findEmployeeById(999987L).getSalary());
         Assert.assertEquals(1, employeeRepository.deleteEmployee(999987L));
     }
@@ -142,13 +136,11 @@ public class EmployeeEndToEndTest {
     public static void tearDown() {
         cleanupDataForEmployee();
         employeeRepository = null;
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + EmployeeEndToEndTest.class.getName() + ": ");
-        logger.info("tearDown()");
+        logger.info(getLoggerInfo() + "tearDown()");
     }
 
     private static void createDataForEmployee() {
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + EmployeeEndToEndTest.class.getName() + ": ");
-        logger.info("### started createDataForEmployee() ###");
+        logger.info(getLoggerInfo() + "### started createDataForEmployee() ###");
         employeeRepository.cleanUp();
         DBLog dBLog = new DBLog.Builder().timestamp(currentTimeStamp).application(Utility.getApplication()).machineName(Utility.getHostName()).userId(String.valueOf(999997)).build();
         Employee employee = new Employee.Builder().employeeId(999997L).personId(999997L).classId(999997L).role("teacher").salary(25000L).status("A").dBLog(dBLog).build();
@@ -168,18 +160,20 @@ public class EmployeeEndToEndTest {
         dBLog = new DBLog.Builder().timestamp(currentTimeStamp).application(Utility.getApplication()).machineName(Utility.getHostName()).userId(String.valueOf(999992)).build();
         employee = new Employee.Builder().employeeId(999992L).personId(999992L).classId(999992L).role("incharge").salary(25000L).status("I").dBLog(dBLog).build();
         Assert.assertEquals(1, employeeRepository.saveEmployee(employee));
-        logger.info("createDataForEmployee(): data" + employeeRepository.findAllEmployees());
-        logger.info("### ended createDataForEmployee() ###");
+        logger.info(getLoggerInfo() + "createDataForEmployee(): data" + employeeRepository.findAllEmployees());
+        logger.info(getLoggerInfo() + "### ended createDataForEmployee() ###");
     }
 
     private static void cleanupDataForEmployee() {
-        logger.info(Utility.getCurrrentTimeStamp() + ": " + EmployeeEndToEndTest.class.getName() + ": ");
-        logger.info("### started cleanupDataForEmployee() ###");
-        logger.info("cleanupDataForEmployee(): data before cleanup: " + employeeRepository.findAllEmployees());
+        logger.info(getLoggerInfo() + "### started cleanupDataForEmployee() ###");
+        logger.info(getLoggerInfo() + "cleanupDataForEmployee(): data before cleanup: " + employeeRepository.findAllEmployees());
         employeeRepository.cleanUp();
-        logger.info("cleanupDataForEmployee(): data after cleanup: " + employeeRepository.findAllEmployees());
-        logger.info("### ended cleanupDataForEmployee() ###");
+        logger.info(getLoggerInfo() + "cleanupDataForEmployee(): data after cleanup: " + employeeRepository.findAllEmployees());
+        logger.info(getLoggerInfo() + "### ended cleanupDataForEmployee() ###");
+    }
 
+    private static String getLoggerInfo() {
+        return Utility.getCurrrentTimeStamp() + ": " + EmployeeEndToEndTest.class.getName() + ": ";
     }
 }
 

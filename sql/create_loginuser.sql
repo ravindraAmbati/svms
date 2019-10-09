@@ -1,7 +1,7 @@
 create table loginuser(
 id int not null primary key,
 username varchar(50) not null unique,
-password varchar(50) not null unique,
+password varchar(50) not null,
 status varchar(1),
 login_time varchar(50),
 logoff_time varchar(50),
