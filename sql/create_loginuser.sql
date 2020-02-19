@@ -1,5 +1,5 @@
 create table loginuser(
-id int not null primary key,
+id varchar(50) not null primary key,
 username varchar(50) not null unique,
 password varchar(50) not null,
 status varchar(1),

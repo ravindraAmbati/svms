@@ -6,8 +6,8 @@ import java.sql.Timestamp;
 import java.util.Date;
 
 public class Utility {
-    private static String applicationName = "svms";
-    private static String version = "1.0v";
+    private static String applicationName = "wsaams";
+    private static String version = "0.01v";
 
     public static String getCurrrentTimeStamp() {
         return new Timestamp(new Date().getTime()).toString();
